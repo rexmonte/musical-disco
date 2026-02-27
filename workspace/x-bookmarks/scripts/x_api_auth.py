@@ -33,7 +33,7 @@ AUTHORIZE_URL = "https://x.com/i/oauth2/authorize"
 TOKEN_URL = "https://api.x.com/2/oauth2/token"
 REDIRECT_PORT = 8739
 REDIRECT_URI = f"http://localhost:{REDIRECT_PORT}/callback"
-SCOPES = "tweet.read users.read bookmark.read bookmark.write offline.access"
+SCOPES = "tweet.read users.read bookmark.read offline.access"
 
 
 def save_config(client_id: str, client_secret: str = ""):
@@ -42,6 +42,7 @@ def save_config(client_id: str, client_secret: str = ""):
     if client_secret:
         config["client_secret"] = client_secret
     CONFIG_FILE.write_text(json.dumps(config, indent=2))
+    os.chmod(CONFIG_FILE, 0o600)  # Restrict permissions — contains client_secret
     print(f"Config saved to {CONFIG_FILE}")
 
 

@@ -25,6 +25,11 @@ security:
     sourced from .env.bird), or (2) X API v2 with OAuth 2.0 tokens stored locally.
     All credentials are stored locally on the user's machine and never transmitted
     to third parties. The user must explicitly provide or authorize credentials.
+  warnings:
+    - "COOKIE AUTH RISK: Browser cookies (AUTH_TOKEN/CT0) grant FULL account access, not just bookmarks. Handle with extreme care."
+    - "Never pass auth tokens as CLI arguments — they are visible in process listings (ps aux). Use environment variables."
+    - "Store .env.bird with restricted permissions: chmod 600 .env.bird"
+    - "The bookmark.write OAuth scope is included but this skill only needs read access. Consider removing bookmark.write from SCOPES in x_api_auth.py if write is not needed."
   permissions:
     - read: "X/Twitter bookmarks (read-only access)"
     - write: "Local files only (bookmark state, token storage)"

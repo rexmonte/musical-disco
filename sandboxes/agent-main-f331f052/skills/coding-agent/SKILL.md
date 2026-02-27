@@ -34,7 +34,6 @@ bash command:"codex exec 'Your prompt'"
 | `workdir`    | string  | Working directory (agent sees only this folder's context)                   |
 | `background` | boolean | Run in background, returns sessionId for monitoring                         |
 | `timeout`    | number  | Timeout in seconds (kills process on expiry)                                |
-| `elevated`   | boolean | Run on host instead of sandbox (if allowed)                                 |
 
 ### Process Tool Actions (for background sessions)
 
@@ -106,7 +105,8 @@ process action:kill sessionId:XXX
 | --------------- | -------------------------------------------------- |
 | `exec "prompt"` | One-shot execution, exits when done                |
 | `--full-auto`   | Sandboxed but auto-approves in workspace           |
-| `--yolo`        | NO sandbox, NO approvals (fastest, most dangerous) |
+
+> **NEVER use `--yolo`.** It disables all sandboxing and approval gates. Always use `--full-auto` instead — it provides auto-approval while maintaining sandbox isolation.
 
 ### Building/Creating
 
@@ -115,7 +115,7 @@ process action:kill sessionId:XXX
 bash pty:true workdir:~/project command:"codex exec --full-auto 'Build a dark mode toggle'"
 
 # Background for longer work
-bash pty:true workdir:~/project background:true command:"codex --yolo 'Refactor the auth module'"
+bash pty:true workdir:~/project background:true command:"codex exec --full-auto 'Refactor the auth module'"
 ```
 
 ### Reviewing PRs
@@ -202,8 +202,8 @@ git worktree add -b fix/issue-78 /tmp/issue-78 main
 git worktree add -b fix/issue-99 /tmp/issue-99 main
 
 # 2. Launch Codex in each (background + PTY!)
-bash pty:true workdir:/tmp/issue-78 background:true command:"pnpm install && codex --yolo 'Fix issue #78: <description>. Commit and push.'"
-bash pty:true workdir:/tmp/issue-99 background:true command:"pnpm install && codex --yolo 'Fix issue #99 from the approved ticket summary. Implement only the in-scope edits and commit after review.'"
+bash pty:true workdir:/tmp/issue-78 background:true command:"pnpm install && codex exec --full-auto 'Fix issue #78: <description>. Commit and push.'"
+bash pty:true workdir:/tmp/issue-99 background:true command:"pnpm install && codex exec --full-auto 'Fix issue #99 from the approved ticket summary. Implement only the in-scope edits and commit after review.'"
 
 # 3. Monitor progress
 process action:list
@@ -266,7 +266,7 @@ openclaw system event --text "Done: [brief summary of what was built]" --mode no
 **Example:**
 
 ```bash
-bash pty:true workdir:~/project background:true command:"codex --yolo exec 'Build a REST API for todos.
+bash pty:true workdir:~/project background:true command:"codex exec --full-auto 'Build a REST API for todos.
 
 When completely finished, run: openclaw system event --text \"Done: Built todos REST API with CRUD endpoints\" --mode now'"
 ```

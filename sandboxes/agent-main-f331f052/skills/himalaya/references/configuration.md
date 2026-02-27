@@ -17,7 +17,7 @@ backend.port = 993
 backend.encryption.type = "tls"
 backend.login = "user@example.com"
 backend.auth.type = "password"
-backend.auth.raw = "your-password"
+backend.auth.cmd = "pass show email/imap"  # NEVER use backend.auth.raw in production
 
 # SMTP backend for sending emails
 message.send.backend.type = "smtp"
@@ -26,16 +26,10 @@ message.send.backend.port = 587
 message.send.backend.encryption.type = "start-tls"
 message.send.backend.login = "user@example.com"
 message.send.backend.auth.type = "password"
-message.send.backend.auth.raw = "your-password"
+message.send.backend.auth.cmd = "pass show email/smtp"  # NEVER use backend.auth.raw in production
 ```
 
 ## Password Options
-
-### Raw password (testing only, not recommended)
-
-```toml
-backend.auth.raw = "your-password"
-```
 
 ### Password from command (recommended)
 
@@ -43,6 +37,8 @@ backend.auth.raw = "your-password"
 backend.auth.cmd = "pass show email/imap"
 # backend.auth.cmd = "security find-generic-password -a user@example.com -s imap -w"
 ```
+
+> **NEVER use `backend.auth.raw`** — it stores passwords in plain text on disk. Always use `cmd` (to fetch from a password manager) or `keyring` (system credential store) instead.
 
 ### System keyring (requires keyring feature)
 
