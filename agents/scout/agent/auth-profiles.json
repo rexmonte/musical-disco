@@ -6,32 +6,30 @@
       "provider": "ollama",
       "token": "123"
     },
-    "openrouter:default": {
-      "type": "api_key",
-      "provider": "openrouter",
-      "key": "${OPENROUTER_API_KEY}"
-    },
     "anthropic:default": {
       "type": "api_key",
       "provider": "anthropic",
       "key": "${ANTHROPIC_API_KEY}"
+    },
+    "google:default": {
+      "type": "api_key",
+      "provider": "google",
+      "key": "${GEMINI_API_KEY}"
     }
   },
   "lastGood": {
     "ollama": "ollama:manual",
-    "openrouter": "openrouter:default",
-    "anthropic": "anthropic:default"
+    "anthropic": "anthropic:default",
+    "google": "google:default"
   },
   "usageStats": {
     "ollama:manual": {
-      "errorCount": 0,
-      "lastUsed": 1772143363884
-    },
-    "openrouter:default": {
-      "errorCount": 0,
-      "lastUsed": 1771874423611
+      "errorCount": 0
     },
     "anthropic:default": {
+      "errorCount": 0
+    },
+    "google:default": {
       "errorCount": 0
     }
   }
