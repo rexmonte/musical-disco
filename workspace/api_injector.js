@@ -1,0 +1,1 @@
+globalThis.default_api = default_api;

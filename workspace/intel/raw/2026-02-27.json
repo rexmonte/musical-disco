@@ -1,0 +1,51 @@
+{
+  "date": "2026-02-27",
+  "collected_at": "2026-02-27T14:39:00Z",
+  "btc": {
+    "price": 66212,
+    "24h_high": 68116,
+    "24h_low": 66642,
+    "24h_change_pct": -2.71,
+    "24h_volume_usd": 48581620694,
+    "funding_rate": "",
+    "notable_liquidations": "",
+    "key_levels": ""
+  },
+  "polymarket": [
+    {
+      "market": "La Liga Winner (top by 24h vol - Mallorca sub-market)",
+      "volume": "$6,798,898 (24h) / $17.97M total",
+      "yes_odds": 0.0005,
+      "no_odds": 0.9995,
+      "category": "sports"
+    },
+    {
+      "market": "Will Elon Musk post 100-119 tweets from Feb 24 to Mar 3, 2026?",
+      "volume": "$58,297 liquidity",
+      "yes_odds": "",
+      "no_odds": "",
+      "category": "culture"
+    },
+    {
+      "market": "US strikes Iran by February 28, 2026?",
+      "volume": "$6,211,557 (24h) / $56.19M total",
+      "yes_odds": 0.24,
+      "no_odds": 0.76,
+      "category": "geopolitics"
+    },
+    {
+      "market": "US strikes Iran series (all dates)",
+      "volume": "$25,110,212 (24h) / $462.3M total",
+      "yes_odds": "",
+      "no_odds": "",
+      "category": "geopolitics"
+    }
+  ],
+  "macro": [
+    "2026-02-27: Core PPI m/m (High impact) - Forecast 0.3%, Previous 0.7%",
+    "2026-02-27: PPI m/m (High impact) - Forecast 0.3%, Previous 0.5%",
+    "2026-02-27: Chicago PMI (Low impact) - Forecast 52.0, Previous 54.0",
+    "2026-02-27: Construction Spending m/m (Low impact) - Forecast 0.2%, Previous 0.5%",
+    "Q4 GDP revision expected to be significant per Econoday (weak 1.4% advance estimate, government shutdown impact)"
+  ]
+}

@@ -1,0 +1,42 @@
+# ─── Credentials & Auth ────────────────────────────────────────────
+agents/*/agent/auth-profiles.json
+agents/*/agent/auth.json
+identity/device.json
+identity/device-auth.json
+devices/paired.json
+devices/pending.json
+
+# ─── Environment / Secret Files ────────────────────────────────────
+.env
+.env.*
+*.env
+*.env.*
+.secrets/
+secrets/
+credentials/
+
+# ─── Bootstrap / PII Files ─────────────────────────────────────────
+BOOTSTRAP.md
+**/BOOTSTRAP.md
+
+# ─── Session / Runtime State ───────────────────────────────────────
+agents/*/sessions/
+*.jsonl
+*.jsonl.deleted.*
+*.jsonl.reset.*
+discord/
+telegram/
+delivery-queue/
+subagents/
+
+# ─── Logs & Temp ───────────────────────────────────────────────────
+logs/
+*.bak*
+*.safe
+*.log
+
+# ─── Misc ──────────────────────────────────────────────────────────
+clouderoute.rtf
+Untitled.rtf
+workspace/node_modules/
+workspace/x-bookmarks/node_modules/

@@ -1,0 +1,776 @@
+{
+  "generated_at": "2026-02-27T06:28:35.208204+00:00",
+  "source": "/Users/clawdrex/.openclaw/workspace/projects/polymarket-bot/intel/raw/polymarket_markets_2026-02-27.json",
+  "total_findings": 25,
+  "findings": [
+    {
+      "type": "range_sum_violation",
+      "severity": "MEDIUM",
+      "event": "Bitcoin price on March 5?",
+      "description": "Range buckets sum to 106.7% (expected ~100%) across 10 buckets",
+      "total": 1.0665,
+      "overshoot": 0.0665,
+      "buckets": [
+        {
+          "direction": "range",
+          "strike": [
+            68000.0,
+            70000.0
+          ],
+          "yes_odds": 0.195,
+          "question": "Will the price of Bitcoin be between $68,000 and $70,000 on March 5?",
+          "market_id": "1448506",
+          "liquidity": 11928.9572
+        },
+        {
+          "direction": "range",
+          "strike": [
+            66000.0,
+            68000.0
+          ],
+          "yes_odds": 0.21,
+          "question": "Will the price of Bitcoin be between $66,000 and $68,000 on March 5?",
+          "market_id": "1448495",
+          "liquidity": 12126.8927
+        },
+        {
+          "direction": "range",
+          "strike": [
+            74000.0,
+            76000.0
+          ],
+          "yes_odds": 0.046,
+          "question": "Will the price of Bitcoin be between $74,000 and $76,000 on March 5?",
+          "market_id": "1448538",
+          "liquidity": 12206.50309
+        },
+        {
+          "direction": "range",
+          "strike": [
+            70000.0,
+            72000.0
+          ],
+          "yes_odds": 0.15,
+          "question": "Will the price of Bitcoin be between $70,000 and $72,000 on March 5?",
+          "market_id": "1448517",
+          "liquidity": 11909.653
+        },
+        {
+          "direction": "range",
+          "strike": [
+            72000.0,
+            74000.0
+          ],
+          "yes_odds": 0.095,
+          "question": "Will the price of Bitcoin be between $72,000 and $74,000 on March 5?",
+          "market_id": "1448528",
+          "liquidity": 11977.4632
+        },
+        {
+          "direction": "range",
+          "strike": [
+            58000.0,
+            60000.0
+          ],
+          "yes_odds": 0.03,
+          "question": "Will the price of Bitcoin be between $58,000 and $60,000 on March 5?",
+          "market_id": "1448457",
+          "liquidity": 12134.10075
+        },
+        {
+          "direction": "range",
+          "strike": [
+            62000.0,
+            64000.0
+          ],
+          "yes_odds": 0.1,
+          "question": "Will the price of Bitcoin be between $62,000 and $64,000 on March 5?",
+          "market_id": "1448474",
+          "liquidity": 11963.5504
+        },
+        {
+          "direction": "range",
+          "strike": [
+            60000.0,
+            62000.0
+          ],
+          "yes_odds": 0.055,
+          "question": "Will the price of Bitcoin be between $60,000 and $62,000 on March 5?",
+          "market_id": "1448465",
+          "liquidity": 12149.8915
+        },
+        {
+          "direction": "range",
+          "strike": [
+            64000.0,
+            66000.0
+          ],
+          "yes_odds": 0.145,
+          "question": "Will the price of Bitcoin be between $64,000 and $66,000 on March 5?",
+          "market_id": "1448483",
+          "liquidity": 11720.953
+        },
+        {
+          "direction": "overflow",
+          "strike": 76000.0,
+          "yes_odds": 0.0405,
+          "question": "Will the price of Bitcoin be greater than $76,000 on March 5?",
+          "market_id": "1448546",
+          "liquidity": 11973.45546
+        }
+      ],
+      "action": {
+        "strategy": "sell all YES",
+        "edge": "6.65%"
+      }
+    },
+    {
+      "type": "monotonicity_violation",
+      "subtype": "below",
+      "severity": "LOW",
+      "event": "What price will Bitcoin hit February 23-March 1?",
+      "description": "P(dip to $56,000) = 0.4% < P(dip to $54,000) = 0.9%",
+      "spread": 0.004000000000000001,
+      "action": {
+        "buy": "YES on 'dip to $56,000' @ 0.4%",
+        "sell": "YES on 'dip to $54,000' @ 0.9%",
+        "edge": "0.40%"
+      },
+      "market_a": {
+        "strike": 56000.0,
+        "yes_odds": 0.0045,
+        "market_id": "1419254",
+        "question": "Will Bitcoin dip to $56,000 February 23-March 1?",
+        "liquidity": 24976.45342,
+        "volume_24h": 47250.319382999995,
+        "clob_tokens": [
+          {
+            "label": "Yes",
+            "token_id": "59648365575590958310555454059919651689667081808329900431544925472428967943124"
+          },
+          {
+            "label": "No",
+            "token_id": "65850402492217643837759411302222130955664662969879248441549821695525871451905"
+          }
+        ]
+      },
+      "market_b": {
+        "strike": 54000.0,
+        "yes_odds": 0.0085,
+        "market_id": "1419255",
+        "question": "Will Bitcoin dip to $54,000 February 23-March 1?",
+        "liquidity": 20154.51854,
+        "volume_24h": 3029.069819,
+        "clob_tokens": [
+          {
+            "label": "Yes",
+            "token_id": "109922247054662182558700361034886124863060758186296384200735928749765389981909"
+          },
+          {
+            "label": "No",
+            "token_id": "113480666402272888840388076274324515119014837984113345203688346352400426649444"
+          }
+        ]
+      }
+    },
+    {
+      "type": "monotonicity_violation",
+      "subtype": "below",
+      "severity": "LOW",
+      "event": "What price will Bitcoin hit in February?",
+      "description": "P(dip to $45,000) = 0.1% < P(dip to $40,000) = 0.1%",
+      "spread": 0.001,
+      "action": {
+        "buy": "YES on 'dip to $45,000' @ 0.1%",
+        "sell": "YES on 'dip to $40,000' @ 0.1%",
+        "edge": "0.10%"
+      },
+      "market_a": {
+        "strike": 45000.0,
+        "yes_odds": 0.0005,
+        "market_id": "1303406",
+        "question": "Will Bitcoin dip to $45,000 in February?",
+        "liquidity": 161051.42183,
+        "volume_24h": 142198.42867000002,
+        "clob_tokens": [
+          {
+            "label": "Yes",
+            "token_id": "114837825043540833283672067889503269800770742012349287528082825707091415484982"
+          },
+          {
+            "label": "No",
+            "token_id": "76567812600040744524275218256953311951050034738153459449884702218254274610736"
+          }
+        ]
+      },
+      "market_b": {
+        "strike": 40000.0,
+        "yes_odds": 0.0015,
+        "market_id": "1303407",
+        "question": "Will Bitcoin dip to $40,000 in February?",
+        "liquidity": 137655.16607,
+        "volume_24h": 151849.465171,
+        "clob_tokens": [
+          {
+            "label": "Yes",
+            "token_id": "49073049378976411368686315739858593637502477587806427193156406157259092102549"
+          },
+          {
+            "label": "No",
+            "token_id": "99951061757610148759416731778217920095544421353396403629582391699547859683887"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 75000.0,
+      "description": "$75,000 strike: February @ 2.8% vs What price will Bitcoin hit in 2026? @ 86.0% (\u039483.2%)",
+      "market_a": {
+        "date": "February",
+        "event": "What price will Bitcoin hit in February?",
+        "yes_odds": 0.0275,
+        "market_id": "1345641",
+        "question": "Will Bitcoin reach $75,000 in February?",
+        "liquidity": 116767.30492,
+        "volume_24h": 618679.7381100003
+      },
+      "market_b": {
+        "date": "What price will Bitcoin hit in 2026?",
+        "event": "What price will Bitcoin hit in 2026?",
+        "yes_odds": 0.86,
+        "market_id": "1345529",
+        "question": "Will Bitcoin reach $75,000 by December 31, 2026?",
+        "liquidity": 23004.2388,
+        "volume_24h": 109057.16368199998
+      },
+      "spread": 0.8325
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 80000.0,
+      "description": "$80,000 strike: February @ 0.5% vs What price will Bitcoin hit in 2026? @ 71.0% (\u039470.5%)",
+      "market_a": {
+        "date": "February",
+        "event": "What price will Bitcoin hit in February?",
+        "yes_odds": 0.005,
+        "market_id": "1345680",
+        "question": "Will Bitcoin reach $80,000 in February?",
+        "liquidity": 159440.26863,
+        "volume_24h": 316634.5630999999
+      },
+      "market_b": {
+        "date": "What price will Bitcoin hit in 2026?",
+        "event": "What price will Bitcoin hit in 2026?",
+        "yes_odds": 0.71,
+        "market_id": "1345530",
+        "question": "Will Bitcoin reach $80,000 by December 31, 2026?",
+        "liquidity": 15158.1445,
+        "volume_24h": 1427.766746
+      },
+      "spread": 0.705
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 80000.0,
+      "description": "$80,000 strike: February 23-March 1 @ 0.6% vs What price will Bitcoin hit in 2026? @ 71.0% (\u039470.4%)",
+      "market_a": {
+        "date": "February 23-March 1",
+        "event": "What price will Bitcoin hit February 23-March 1?",
+        "yes_odds": 0.006,
+        "market_id": "1419239",
+        "question": "Will Bitcoin reach $80,000 February 23-March 1?",
+        "liquidity": 30181.31616,
+        "volume_24h": 41882.890529000004
+      },
+      "market_b": {
+        "date": "What price will Bitcoin hit in 2026?",
+        "event": "What price will Bitcoin hit in 2026?",
+        "yes_odds": 0.71,
+        "market_id": "1345530",
+        "question": "Will Bitcoin reach $80,000 by December 31, 2026?",
+        "liquidity": 15158.1445,
+        "volume_24h": 1427.766746
+      },
+      "spread": 0.704
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 90000.0,
+      "description": "$90,000 strike: February @ 0.1% vs What price will Bitcoin hit in 2026? @ 49.5% (\u039449.5%)",
+      "market_a": {
+        "date": "February",
+        "event": "What price will Bitcoin hit in February?",
+        "yes_odds": 0.0005,
+        "market_id": "1303381",
+        "question": "Will Bitcoin reach $90,000 in February?",
+        "liquidity": 218497.23729,
+        "volume_24h": 152484.40999999997
+      },
+      "market_b": {
+        "date": "What price will Bitcoin hit in 2026?",
+        "event": "What price will Bitcoin hit in 2026?",
+        "yes_odds": 0.495,
+        "market_id": "1345531",
+        "question": "Will Bitcoin reach $90,000 by December 31, 2026?",
+        "liquidity": 15344.9997,
+        "volume_24h": 1182.95567
+      },
+      "spread": 0.4945
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 100000.0,
+      "description": "$100,000 strike: February @ 0.1% vs What price will Bitcoin hit in 2026? @ 38.5% (\u039438.5%)",
+      "market_a": {
+        "date": "February",
+        "event": "What price will Bitcoin hit in February?",
+        "yes_odds": 0.0005,
+        "market_id": "1303377",
+        "question": "Will Bitcoin reach $100,000 in February?",
+        "liquidity": 155688.3523,
+        "volume_24h": 221167.7978719999
+      },
+      "market_b": {
+        "date": "What price will Bitcoin hit in 2026?",
+        "event": "What price will Bitcoin hit in 2026?",
+        "yes_odds": 0.385,
+        "market_id": "701496",
+        "question": "Will Bitcoin reach $100,000 by December 31, 2026?",
+        "liquidity": 129518.4268,
+        "volume_24h": 2557.056548
+      },
+      "spread": 0.3845
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 23-March 1 @ 37.0% vs February 27 @ 4.8% (\u039432.2%)",
+      "market_a": {
+        "date": "February 23-March 1",
+        "event": "What price will Bitcoin hit February 23-March 1?",
+        "yes_odds": 0.37,
+        "market_id": "1419248",
+        "question": "Will Bitcoin reach $70,000 February 23-March 1?",
+        "liquidity": 20627.6285,
+        "volume_24h": 70619.55259699997
+      },
+      "market_b": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.048,
+        "market_id": "1402992",
+        "question": "Will the price of Bitcoin be above $70,000 on February 27?",
+        "liquidity": 30148.23417,
+        "volume_24h": 164035.165232
+      },
+      "spread": 0.322
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 110000.0,
+      "description": "$110,000 strike: February @ 0.1% vs What price will Bitcoin hit in 2026? @ 27.5% (\u039427.5%)",
+      "market_a": {
+        "date": "February",
+        "event": "What price will Bitcoin hit in February?",
+        "yes_odds": 0.0005,
+        "market_id": "1303369",
+        "question": "Will Bitcoin reach $110,000 in February?",
+        "liquidity": 337711.43115,
+        "volume_24h": 446063.1469999999
+      },
+      "market_b": {
+        "date": "What price will Bitcoin hit in 2026?",
+        "event": "What price will Bitcoin hit in 2026?",
+        "yes_odds": 0.275,
+        "market_id": "701495",
+        "question": "Will Bitcoin reach $110,000 by December 31, 2026?",
+        "liquidity": 35488.7712,
+        "volume_24h": 3705.153699
+      },
+      "spread": 0.2745
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 23-March 1 @ 37.0% vs February 28 @ 11.5% (\u039425.5%)",
+      "market_a": {
+        "date": "February 23-March 1",
+        "event": "What price will Bitcoin hit February 23-March 1?",
+        "yes_odds": 0.37,
+        "market_id": "1419248",
+        "question": "Will Bitcoin reach $70,000 February 23-March 1?",
+        "liquidity": 20627.6285,
+        "volume_24h": 70619.55259699997
+      },
+      "market_b": {
+        "date": "February 28",
+        "event": "Bitcoin above ___ on February 28?",
+        "yes_odds": 0.115,
+        "market_id": "1408380",
+        "question": "Will the price of Bitcoin be above $70,000 on February 28?",
+        "liquidity": 19248.8949,
+        "volume_24h": 23804.022938
+      },
+      "spread": 0.255
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 66000.0,
+      "description": "$66,000 strike: February 27 @ 92.5% vs March 5 @ 67.5% (\u039425.0%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.925,
+        "market_id": "1402989",
+        "question": "Will the price of Bitcoin be above $66,000 on February 27?",
+        "liquidity": 36591.1898,
+        "volume_24h": 134776.61000600018
+      },
+      "market_b": {
+        "date": "March 5",
+        "event": "Bitcoin above ___ on March 5?",
+        "yes_odds": 0.675,
+        "market_id": "1448504",
+        "question": "Will the price of Bitcoin be above $66,000 on March 5?",
+        "liquidity": 17120.7683,
+        "volume_24h": 91.857408
+      },
+      "spread": 0.25
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 27 @ 4.8% vs March 5 @ 29.5% (\u039424.7%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.048,
+        "market_id": "1402992",
+        "question": "Will the price of Bitcoin be above $70,000 on February 27?",
+        "liquidity": 30148.23417,
+        "volume_24h": 164035.165232
+      },
+      "market_b": {
+        "date": "March 5",
+        "event": "Bitcoin above ___ on March 5?",
+        "yes_odds": 0.295,
+        "market_id": "1448527",
+        "question": "Will the price of Bitcoin be above $70,000 on March 5?",
+        "liquidity": 12484.5993,
+        "volume_24h": 241.879767
+      },
+      "spread": 0.247
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 27 @ 4.8% vs March 4 @ 28.0% (\u039423.2%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.048,
+        "market_id": "1402992",
+        "question": "Will the price of Bitcoin be above $70,000 on February 27?",
+        "liquidity": 30148.23417,
+        "volume_24h": 164035.165232
+      },
+      "market_b": {
+        "date": "March 4",
+        "event": "Bitcoin above ___ on March 4?",
+        "yes_odds": 0.28,
+        "market_id": "1436214",
+        "question": "Will the price of Bitcoin be above $70,000 on March 4?",
+        "liquidity": 17289.7782,
+        "volume_24h": 377.393129
+      },
+      "spread": 0.23200000000000004
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 66000.0,
+      "description": "$66,000 strike: February 27 @ 92.5% vs March 4 @ 69.5% (\u039423.0%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.925,
+        "market_id": "1402989",
+        "question": "Will the price of Bitcoin be above $66,000 on February 27?",
+        "liquidity": 36591.1898,
+        "volume_24h": 134776.61000600018
+      },
+      "market_b": {
+        "date": "March 4",
+        "event": "Bitcoin above ___ on March 4?",
+        "yes_odds": 0.695,
+        "market_id": "1436198",
+        "question": "Will the price of Bitcoin be above $66,000 on March 4?",
+        "liquidity": 18813.2735,
+        "volume_24h": 3917.5481110000005
+      },
+      "spread": 0.2300000000000001
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 23-March 1 @ 37.0% vs March 1 @ 16.3% (\u039420.7%)",
+      "market_a": {
+        "date": "February 23-March 1",
+        "event": "What price will Bitcoin hit February 23-March 1?",
+        "yes_odds": 0.37,
+        "market_id": "1419248",
+        "question": "Will Bitcoin reach $70,000 February 23-March 1?",
+        "liquidity": 20627.6285,
+        "volume_24h": 70619.55259699997
+      },
+      "market_b": {
+        "date": "March 1",
+        "event": "Bitcoin above ___ on March 1?",
+        "yes_odds": 0.163,
+        "market_id": "1414971",
+        "question": "Will the price of Bitcoin be above $70,000 on March 1?",
+        "liquidity": 18345.29001,
+        "volume_24h": 10202.215693
+      },
+      "spread": 0.207
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 66000.0,
+      "description": "$66,000 strike: February 27 @ 92.5% vs March 3 @ 72.0% (\u039420.5%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.925,
+        "market_id": "1402989",
+        "question": "Will the price of Bitcoin be above $66,000 on February 27?",
+        "liquidity": 36591.1898,
+        "volume_24h": 134776.61000600018
+      },
+      "market_b": {
+        "date": "March 3",
+        "event": "Bitcoin above ___ on March 3?",
+        "yes_odds": 0.72,
+        "market_id": "1428021",
+        "question": "Will the price of Bitcoin be above $66,000 on March 3?",
+        "liquidity": 16631.8149,
+        "volume_24h": 1548.1550610000002
+      },
+      "spread": 0.20500000000000007
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 27 @ 4.8% vs March 3 @ 24.5% (\u039419.7%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.048,
+        "market_id": "1402992",
+        "question": "Will the price of Bitcoin be above $70,000 on February 27?",
+        "liquidity": 30148.23417,
+        "volume_24h": 164035.165232
+      },
+      "market_b": {
+        "date": "March 3",
+        "event": "Bitcoin above ___ on March 3?",
+        "yes_odds": 0.245,
+        "market_id": "1428035",
+        "question": "Will the price of Bitcoin be above $70,000 on March 3?",
+        "liquidity": 17965.2877,
+        "volume_24h": 618.887962
+      },
+      "spread": 0.197
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 120000.0,
+      "description": "$120,000 strike: February @ 0.1% vs What price will Bitcoin hit in 2026? @ 19.5% (\u039419.4%)",
+      "market_a": {
+        "date": "February",
+        "event": "What price will Bitcoin hit in February?",
+        "yes_odds": 0.0005,
+        "market_id": "1303361",
+        "question": "Will Bitcoin reach $120,000 in February?",
+        "liquidity": 247495.87773,
+        "volume_24h": 6511.0199999999995
+      },
+      "market_b": {
+        "date": "What price will Bitcoin hit in 2026?",
+        "event": "What price will Bitcoin hit in 2026?",
+        "yes_odds": 0.195,
+        "market_id": "701494",
+        "question": "Will Bitcoin reach $120,000 by December 31, 2026?",
+        "liquidity": 44126.068,
+        "volume_24h": 328.881422
+      },
+      "spread": 0.1945
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 28 @ 11.5% vs March 5 @ 29.5% (\u039418.0%)",
+      "market_a": {
+        "date": "February 28",
+        "event": "Bitcoin above ___ on February 28?",
+        "yes_odds": 0.115,
+        "market_id": "1408380",
+        "question": "Will the price of Bitcoin be above $70,000 on February 28?",
+        "liquidity": 19248.8949,
+        "volume_24h": 23804.022938
+      },
+      "market_b": {
+        "date": "March 5",
+        "event": "Bitcoin above ___ on March 5?",
+        "yes_odds": 0.295,
+        "market_id": "1448527",
+        "question": "Will the price of Bitcoin be above $70,000 on March 5?",
+        "liquidity": 12484.5993,
+        "volume_24h": 241.879767
+      },
+      "spread": 0.18
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 66000.0,
+      "description": "$66,000 strike: February 28 @ 84.5% vs March 5 @ 67.5% (\u039417.0%)",
+      "market_a": {
+        "date": "February 28",
+        "event": "Bitcoin above ___ on February 28?",
+        "yes_odds": 0.845,
+        "market_id": "1408375",
+        "question": "Will the price of Bitcoin be above $66,000 on February 28?",
+        "liquidity": 17768.3777,
+        "volume_24h": 29632.573804
+      },
+      "market_b": {
+        "date": "March 5",
+        "event": "Bitcoin above ___ on March 5?",
+        "yes_odds": 0.675,
+        "market_id": "1448504",
+        "question": "Will the price of Bitcoin be above $66,000 on March 5?",
+        "liquidity": 17120.7683,
+        "volume_24h": 91.857408
+      },
+      "spread": 0.16999999999999993
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 70000.0,
+      "description": "$70,000 strike: February 28 @ 11.5% vs March 4 @ 28.0% (\u039416.5%)",
+      "market_a": {
+        "date": "February 28",
+        "event": "Bitcoin above ___ on February 28?",
+        "yes_odds": 0.115,
+        "market_id": "1408380",
+        "question": "Will the price of Bitcoin be above $70,000 on February 28?",
+        "liquidity": 19248.8949,
+        "volume_24h": 23804.022938
+      },
+      "market_b": {
+        "date": "March 4",
+        "event": "Bitcoin above ___ on March 4?",
+        "yes_odds": 0.28,
+        "market_id": "1436214",
+        "question": "Will the price of Bitcoin be above $70,000 on March 4?",
+        "liquidity": 17289.7782,
+        "volume_24h": 377.393129
+      },
+      "spread": 0.16500000000000004
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 64000.0,
+      "description": "$64,000 strike: February 27 @ 98.7% vs March 5 @ 82.5% (\u039416.2%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.9865,
+        "market_id": "1402988",
+        "question": "Will the price of Bitcoin be above $64,000 on February 27?",
+        "liquidity": 45453.46095,
+        "volume_24h": 47976.729213999984
+      },
+      "market_b": {
+        "date": "March 5",
+        "event": "Bitcoin above ___ on March 5?",
+        "yes_odds": 0.825,
+        "market_id": "1448492",
+        "question": "Will the price of Bitcoin be above $64,000 on March 5?",
+        "liquidity": 16923.3295,
+        "volume_24h": 0
+      },
+      "spread": 0.1615000000000001
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 72000.0,
+      "description": "$72,000 strike: February 27 @ 0.7% vs March 5 @ 16.0% (\u039415.3%)",
+      "market_a": {
+        "date": "February 27",
+        "event": "Bitcoin above ___ on February 27?",
+        "yes_odds": 0.007,
+        "market_id": "1402993",
+        "question": "Will the price of Bitcoin be above $72,000 on February 27?",
+        "liquidity": 31255.96212,
+        "volume_24h": 76716.17351399998
+      },
+      "market_b": {
+        "date": "March 5",
+        "event": "Bitcoin above ___ on March 5?",
+        "yes_odds": 0.16,
+        "market_id": "1448537",
+        "question": "Will the price of Bitcoin be above $72,000 on March 5?",
+        "liquidity": 16905.5191,
+        "volume_24h": 0
+      },
+      "spread": 0.153
+    },
+    {
+      "type": "cross_date_divergence",
+      "severity": "INFO",
+      "strike": 66000.0,
+      "description": "$66,000 strike: February 28 @ 84.5% vs March 4 @ 69.5% (\u039415.0%)",
+      "market_a": {
+        "date": "February 28",
+        "event": "Bitcoin above ___ on February 28?",
+        "yes_odds": 0.845,
+        "market_id": "1408375",
+        "question": "Will the price of Bitcoin be above $66,000 on February 28?",
+        "liquidity": 17768.3777,
+        "volume_24h": 29632.573804
+      },
+      "market_b": {
+        "date": "March 4",
+        "event": "Bitcoin above ___ on March 4?",
+        "yes_odds": 0.695,
+        "market_id": "1436198",
+        "question": "Will the price of Bitcoin be above $66,000 on March 4?",
+        "liquidity": 18813.2735,
+        "volume_24h": 3917.5481110000005
+      },
+      "spread": 0.15000000000000002
+    }
+  ]
+}

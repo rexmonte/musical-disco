@@ -1,0 +1,531 @@
+[
+  {
+    "id": "2026704165515198934",
+    "text": "10,000 -> $240,967 in one month using Claude Bot\n\n60% win rate, closed 8000+ trades in profit\n\nasked ClaudeCode, and it clearly explained the strategy here\n\n> Fast-Loop \n> Kelly Criterion \n> Monte Carlo Uncertainty Quantification\n\nyou need to clearly understand simple math and control all risks to get into top 0.1% of traders",
+    "createdAt": "Wed Feb 25 17:01:42 +0000 2026",
+    "replyCount": 11,
+    "retweetCount": 18,
+    "likeCount": 199,
+    "conversationId": "2026704165515198934",
+    "author": {
+      "username": "noisyb0y1",
+      "name": "Noisy"
+    },
+    "authorId": "1569989545575284738",
+    "quotedTweet": {
+      "id": "2026616786771120439",
+      "text": "https://t.co/ACS9ZfhqIn",
+      "createdAt": "Wed Feb 25 11:14:29 +0000 2026",
+      "replyCount": 10,
+      "retweetCount": 36,
+      "likeCount": 274,
+      "conversationId": "2026616786771120439",
+      "author": {
+        "username": "noisyb0y1",
+        "name": "Noisy"
+      },
+      "authorId": "1569989545575284738"
+    },
+    "media": [
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2026691930436874240/img/CiHud-uUzCUVFQmh.jpg",
+        "width": 1600,
+        "height": 1352,
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2026691930436874240/img/CiHud-uUzCUVFQmh.jpg:small",
+        "videoUrl": "https://video.twimg.com/amplify_video/2026691930436874240/vid/avc1/1600x1352/EtdH_nV0tjphfjZu.mp4?tag=21",
+        "durationMs": 37501
+      },
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HCBIVZmXwAc9snr.jpg",
+        "width": 924,
+        "height": 1138,
+        "previewUrl": "https://pbs.twimg.com/media/HCBIVZmXwAc9snr.jpg:small"
+      }
+    ]
+  },
+  {
+    "id": "2026757796390449382",
+    "text": "https://t.co/fA1UmGvKou",
+    "createdAt": "Wed Feb 25 20:34:48 +0000 2026",
+    "replyCount": 639,
+    "retweetCount": 1577,
+    "likeCount": 7657,
+    "conversationId": "2026757796390449382",
+    "author": {
+      "username": "1914ad",
+      "name": "Justin Bechler #BIP-110"
+    },
+    "authorId": "1444990060126818304"
+  },
+  {
+    "id": "2026608314360988039",
+    "text": "MLX + OpenCode + Qwen3.5-122B-A10B-4bit on M3 Ultra created a great snake game! Work zero-shot.\n\nVideo clearly in super fast mode during generation.\nI generated the prompt using Grok 4.20, it's in the article. https://t.co/I1PliXdHat",
+    "createdAt": "Wed Feb 25 10:40:49 +0000 2026",
+    "replyCount": 12,
+    "retweetCount": 25,
+    "likeCount": 345,
+    "conversationId": "2026608314360988039",
+    "author": {
+      "username": "ivanfioravanti",
+      "name": "Ivan Fioravanti ᯅ"
+    },
+    "authorId": "43874767",
+    "quotedTweet": {
+      "id": "2026607896927097042",
+      "text": "https://t.co/a6tyzMo2C3",
+      "createdAt": "Wed Feb 25 10:39:09 +0000 2026",
+      "replyCount": 10,
+      "retweetCount": 14,
+      "likeCount": 188,
+      "conversationId": "2026607896927097042",
+      "author": {
+        "username": "ivanfioravanti",
+        "name": "Ivan Fioravanti ᯅ"
+      },
+      "authorId": "43874767"
+    },
+    "media": [
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2026608161835143168/img/R6VdiLj3ysn1amCS.jpg",
+        "width": 1920,
+        "height": 1080,
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2026608161835143168/img/R6VdiLj3ysn1amCS.jpg:small",
+        "videoUrl": "https://video.twimg.com/amplify_video/2026608161835143168/vid/avc1/1920x1080/LGan7QX49AnKszqq.mp4?tag=21",
+        "durationMs": 21254
+      }
+    ]
+  },
+  {
+    "id": "2026718729707598020",
+    "text": "Do you even understand what this means?\n\nAn open source model just released that is:\n\n• Just as smart as Sonnet 4.5\n• Incredible at coding\n• Can run on almost any modern computer\n\nIf you have 32gb of RAM (most Mac Minis do) you can have unlimited super intelligence on your desk. For free.\n\nSonnet 4.5 was released 5 months ago\n\nIn 5 months that level of intelligence went from frontier to free on your desk\n\nAnd not only that, can run on any laptop with 32gb of RAM\n\nIf you have the memory, do the following immediately:\n\n1. Download LM Studio\n2. Go to your OpenClaw and ask which of these new Qwen models is best for your hardware\n3. Have it walk you through downloading and loading it\n4. Build apps with it knowing you are using your own personal, private super intelligence on your desk\n\nThe people denying this is the future are so beyond lost.",
+    "createdAt": "Wed Feb 25 17:59:34 +0000 2026",
+    "replyCount": 267,
+    "retweetCount": 323,
+    "likeCount": 4119,
+    "conversationId": "2026718729707598020",
+    "author": {
+      "username": "AlexFinn",
+      "name": "Alex Finn"
+    },
+    "authorId": "1369348853414178822",
+    "quotedTweet": {
+      "id": "2026339351530188939",
+      "text": "🚀 Introducing the Qwen 3.5 Medium Model Series\nQwen3.5-Flash · Qwen3.5-35B-A3B · Qwen3.5-122B-A10B · Qwen3.5-27B\n\n✨ More intelligence, less compute.\n• Qwen3.5-35B-A3B now surpasses Qwen3-235B-A22B-2507 and Qwen3-VL-235B-A22B — a reminder that better architecture, data quality, and RL can move intelligence forward, not just bigger parameter counts.\n\n• Qwen3.5-122B-A10B and 27B continue narrowing the gap between medium-sized and frontier models — especially in more complex agent scenarios.\n\n• Qwen3.5-Flash is the hosted production version aligned with 35B-A3B, featuring:\n– 1M context length by default\n– Official built-in tools\n\n🔗 Hugging Face: https://t.co/wFMdX5pDjU\n\n🔗 ModelScope: https://t.co/9NGXcIdCWI\n\n🔗 Qwen3.5-Flash API: https://t.co/82ESSpaqAF\n\nTry in Qwen Chat 👇\nFlash: https://t.co/UkTL3JZxIK\n\n27B: https://t.co/haKxG4lETy\n\n35B-A3B: https://t.co/Oc1lYSTbwh\n\n122B-A10B: https://t.co/hBMODXmh1o\n\nWould love to hear what you build with it.",
+      "createdAt": "Tue Feb 24 16:52:03 +0000 2026",
+      "replyCount": 357,
+      "retweetCount": 887,
+      "likeCount": 6289,
+      "conversationId": "2026339351530188939",
+      "author": {
+        "username": "Alibaba_Qwen",
+        "name": "Qwen"
+      },
+      "authorId": "1753339277386342400",
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HB8AleUaMAArNyM.jpg",
+          "width": 2048,
+          "height": 1357,
+          "previewUrl": "https://pbs.twimg.com/media/HB8AleUaMAArNyM.jpg:small"
+        }
+      ]
+    }
+  },
+  {
+    "id": "2026036464287412412",
+    "text": "how to use obsidian + claude code to build a 24/7 personal operating system and build your startup:\n\n1. write everything in markdown (daily notes, projects, beliefs, people, meetings)\n\n2. link your notes together so they mirror how your brain actually thinks.\n\n3. install obsidian cli so claude code can read your entire vault + the relationships.\n\n4. stop reexplaining projects every session. use reference files instead.\n\n5. build custom slash commands:\n\n/context → load your full life + work state\n/trace → see how an idea evolved over months\n/connect → bridge two domains you’ve been circling\n/ideas → generate startup ideas from your vault\n/graduate → promote daily thoughts into real assets\n\n6. keep a strict rule: human writes the vault. agents read it, suggest, execute.\n\n7. let claude aka clode surface patterns you’ve been unconsciously circling for years.\n\n8. delegate from inside your notes. one sentence in obsidian → agent handles the rest.\n\n9. treat writing as leverage.the more you write, the more context your agents have.\n\n10. understand this:markdown files are the oxygen of llms.\n\ni really enjoyed seeing how to use obsidian thanks to @internetvin \n\nvin uses ai like a thinking partner wired into his life’s work.\n\n99.99% of people won’t do this because it requires reflection + setup.\n\nbut once the vault exists, the agent stops being generic.\nit starts thinking in your voice.\n\nepisode is live on @startupideaspod (more there)\n\nthis one is different. send this tweet to a friend.\n\nim still processing how game changer obsidian + claude code is, maybe you too\n\nwatch",
+    "createdAt": "Mon Feb 23 20:48:29 +0000 2026",
+    "replyCount": 294,
+    "retweetCount": 765,
+    "likeCount": 6873,
+    "conversationId": "2026036464287412412",
+    "author": {
+      "username": "gregisenberg",
+      "name": "GREG ISENBERG"
+    },
+    "authorId": "14642331",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2026031854407622657/img/YGXFRZwyEiyJ0YLf.jpg",
+        "width": 1280,
+        "height": 720,
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2026031854407622657/img/YGXFRZwyEiyJ0YLf.jpg:small",
+        "videoUrl": "https://video.twimg.com/amplify_video/2026031854407622657/vid/avc1/1280x720/hupumaZWEforq4b-.mp4?tag=21",
+        "durationMs": 3536794
+      }
+    ]
+  },
+  {
+    "id": "2026300104504676798",
+    "text": "https://t.co/28O4pzyQWd",
+    "createdAt": "Tue Feb 24 14:16:06 +0000 2026",
+    "replyCount": 53,
+    "retweetCount": 259,
+    "likeCount": 2603,
+    "conversationId": "2026300104504676798",
+    "author": {
+      "username": "coreyganim",
+      "name": "Corey Ganim"
+    },
+    "authorId": "1535963469220020228"
+  },
+  {
+    "id": "2026311784421036223",
+    "text": "1/ Some Simple Economics of AGI—🔥🧵\nRight now, there is a low-grade panic running through the economy. Everyone is asking the same anxious question: what exactly is AI going to automate, and what will be left for us? https://t.co/XlIea559zx",
+    "createdAt": "Tue Feb 24 15:02:31 +0000 2026",
+    "replyCount": 102,
+    "retweetCount": 284,
+    "likeCount": 1521,
+    "conversationId": "2026311784421036223",
+    "author": {
+      "username": "ccatalini",
+      "name": "Christian Catalini"
+    },
+    "authorId": "17867838",
+    "media": [
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HB7it8EbEAAFSgA.jpg",
+        "width": 2002,
+        "height": 1476,
+        "previewUrl": "https://pbs.twimg.com/media/HB7it8EbEAAFSgA.jpg:small"
+      }
+    ]
+  },
+  {
+    "id": "2025920521871716562",
+    "text": "https://t.co/DotZ3V6XhJ",
+    "createdAt": "Mon Feb 23 13:07:46 +0000 2026",
+    "replyCount": 342,
+    "retweetCount": 1459,
+    "likeCount": 11186,
+    "conversationId": "2025920521871716562",
+    "author": {
+      "username": "elvissun",
+      "name": "Elvis"
+    },
+    "authorId": "1683639929673220097"
+  },
+  {
+    "id": "2026069441474138525",
+    "text": "He really compressed 4 years of therapy into 60 seconds.￼ https://t.co/cQnYajamvt",
+    "createdAt": "Mon Feb 23 22:59:32 +0000 2026",
+    "replyCount": 165,
+    "retweetCount": 4049,
+    "likeCount": 23322,
+    "conversationId": "2026069441474138525",
+    "author": {
+      "username": "growthhub_",
+      "name": "Growth Labs"
+    },
+    "authorId": "1395298176",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2026069357776842752/img/UG4IKsyseHnK7QNA.jpg",
+        "width": 576,
+        "height": 350,
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2026069357776842752/img/UG4IKsyseHnK7QNA.jpg:small",
+        "videoUrl": "https://video.twimg.com/amplify_video/2026069357776842752/vid/avc1/576x350/1SPw11xfU7ip7iuX.mp4?tag=21",
+        "durationMs": 66633
+      }
+    ]
+  },
+  {
+    "id": "2026273466434162807",
+    "text": "This might be the most INSANE OpenClaw setup I've found.\n\nOpenClaw + Kimi K2.5 + Ollama = $0/month AI agents.\n\nGood enough for 70% of daily tasks.\n\nHere's the 2-minute setup ↓ https://t.co/5eT19HqKcA",
+    "createdAt": "Tue Feb 24 12:30:15 +0000 2026",
+    "replyCount": 53,
+    "retweetCount": 116,
+    "likeCount": 980,
+    "conversationId": "2026273466434162807",
+    "author": {
+      "username": "PrajwalTomar_",
+      "name": "Prajwal Tomar"
+    },
+    "authorId": "1676906284715503617",
+    "media": [
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HB7E-qUawAETsec.jpg",
+        "width": 1280,
+        "height": 720,
+        "previewUrl": "https://pbs.twimg.com/media/HB7E-qUawAETsec.jpg:small"
+      }
+    ]
+  },
+  {
+    "id": "2026019344602288166",
+    "text": "People giving OpenClaw root access to their entire life https://t.co/jqW0FwiW03",
+    "createdAt": "Mon Feb 23 19:40:28 +0000 2026",
+    "replyCount": 10487,
+    "retweetCount": 24251,
+    "likeCount": 396290,
+    "conversationId": "2026019344602288166",
+    "author": {
+      "username": "elonmusk",
+      "name": "Elon Musk"
+    },
+    "authorId": "44196397",
+    "media": [
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HB3d20pXwAAQGV7.jpg",
+        "width": 1152,
+        "height": 633,
+        "previewUrl": "https://pbs.twimg.com/media/HB3d20pXwAAQGV7.jpg:small"
+      }
+    ]
+  },
+  {
+    "id": "2025120936643678365",
+    "text": "BREAKING: AI can now build financial plans like Goldman Sachs wealth advisors (for free).\n\nHere are 12 insane Claude prompts that replace $5,000/hour financial planners (Save for later) https://t.co/pb3ei8J1UR",
+    "createdAt": "Sat Feb 21 08:10:30 +0000 2026",
+    "replyCount": 53,
+    "retweetCount": 383,
+    "likeCount": 3027,
+    "conversationId": "2025120936643678365",
+    "author": {
+      "username": "heynavtoor",
+      "name": "Nav Toor"
+    },
+    "authorId": "1916904726295453696",
+    "media": [
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HBqswrqbgAkItW6.png",
+        "width": 1200,
+        "height": 675,
+        "previewUrl": "https://pbs.twimg.com/media/HBqswrqbgAkItW6.png:small"
+      }
+    ]
+  },
+  {
+    "id": "2024870225301090667",
+    "text": "You can make $600K.\n\nWith a bot that earns $83 every hour, 24/7, no days off, 365 days straight.\n\nBy buying both sides of the same match on Polymarket and locking profit before the game even starts.\n\n> The bot buys YES and NO simultaneously on sports markets.\n> When combined price is below $1 - profit is locked instantly.\n> 7,877 trades.\n> $619K in 12 months.\n\nCheck the wallet here: https://t.co/YJSN7x7DN1\n\nI reverse-engineered every trade and rebuilt the full logic in Claude Opus 4.6.\n\nThe strategy, the math, both arb types, the exact 5-step bot architecture - all in the article.\n\nFeed it to your OpenClaw, let it spec the bot for Claude Opus 4.6, and you are set.",
+    "createdAt": "Fri Feb 20 15:34:16 +0000 2026",
+    "replyCount": 155,
+    "retweetCount": 206,
+    "likeCount": 3100,
+    "conversationId": "2024870225301090667",
+    "author": {
+      "username": "xmayeth",
+      "name": "may.crypto {🦅}"
+    },
+    "authorId": "1473355168838258694",
+    "quotedTweet": {
+      "id": "2024509163632533826",
+      "text": "https://t.co/1ik1n8awxy",
+      "createdAt": "Thu Feb 19 15:39:32 +0000 2026",
+      "replyCount": 54,
+      "retweetCount": 67,
+      "likeCount": 893,
+      "conversationId": "2024509163632533826",
+      "author": {
+        "username": "xmayeth",
+        "name": "may.crypto {🦅}"
+      },
+      "authorId": "1473355168838258694"
+    },
+    "media": [
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2024870168703197184/img/MF73mdY3msQqyov2.jpg",
+        "width": 1144,
+        "height": 1080,
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2024870168703197184/img/MF73mdY3msQqyov2.jpg:small",
+        "videoUrl": "https://video.twimg.com/amplify_video/2024870168703197184/vid/avc1/1144x1080/pLpmq2cXtBVo_hf3.mp4?tag=21",
+        "durationMs": 15000
+      }
+    ]
+  },
+  {
+    "id": "2024445857744171509",
+    "text": "How to Turn $15k into $529k in 15 Days\n\nA Clawdbot scaled a deposit up to $529k\n\nBy trading 5-min and 15-min markets on Polymarket\n\n> the bot buys YES and NO simultaneously\n> If their combined price is below $1, making 4% profit instantly\n\n> 9,866 trades\n> 83.9% win rate\n> +$529k profit\n\nCheck this profile here: https://t.co/YOKBDwf91f\n\nIf you wish to do the same\n\nI have outlined exactly how to create your own bot in my article\n\nWhich is also where I told the story of an account making $101k in 48 hours",
+    "createdAt": "Thu Feb 19 11:27:59 +0000 2026",
+    "replyCount": 88,
+    "retweetCount": 177,
+    "likeCount": 1972,
+    "conversationId": "2024445857744171509",
+    "author": {
+      "username": "0xDPool",
+      "name": "DPool"
+    },
+    "authorId": "1790483351498874881",
+    "quotedTweet": {
+      "id": "2023728978561765574",
+      "text": "https://t.co/w49fRf9JvL",
+      "createdAt": "Tue Feb 17 11:59:22 +0000 2026",
+      "replyCount": 52,
+      "retweetCount": 220,
+      "likeCount": 1809,
+      "conversationId": "2023728978561765574",
+      "author": {
+        "username": "0xDPool",
+        "name": "DPool"
+      },
+      "authorId": "1790483351498874881"
+    },
+    "media": [
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2024445743680147459/img/njYTuh-ccUrtrQvB.jpg",
+        "width": 1172,
+        "height": 1312,
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2024445743680147459/img/njYTuh-ccUrtrQvB.jpg:small",
+        "videoUrl": "https://video.twimg.com/amplify_video/2024445743680147459/vid/avc1/720x806/22PARMB6FTMZKw1t.mp4?tag=14",
+        "durationMs": 12628
+      },
+      {
+        "type": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2024445795920236544/img/Ag_0XEtEbSpZUUrr.jpg",
+        "width": 1696,
+        "height": 1308,
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2024445795920236544/img/Ag_0XEtEbSpZUUrr.jpg:small",
+        "videoUrl": "https://video.twimg.com/amplify_video/2024445795920236544/vid/avc1/932x720/__WMOvDhngSYHPYL.mp4?tag=14",
+        "durationMs": 26323
+      }
+    ]
+  },
+  {
+    "id": "2023728978561765574",
+    "text": "https://t.co/w49fRf9JvL",
+    "createdAt": "Tue Feb 17 11:59:22 +0000 2026",
+    "replyCount": 52,
+    "retweetCount": 220,
+    "likeCount": 1809,
+    "conversationId": "2023728978561765574",
+    "author": {
+      "username": "0xDPool",
+      "name": "DPool"
+    },
+    "authorId": "1790483351498874881"
+  },
+  {
+    "id": "2024572078314451146",
+    "text": "Most give their OpenClaw tasks.\n\nAlmost nobody asks theirs the real questions that make it smarter. \n\nYour agent understands your context, patterns, blind spots, and workflows. \n\nIt’s sitting on insights about YOU that it will never ever surface unless you ask.\n\nThese 21 prompts force OpenClaw to self-improve, catch its own gaps, and build what you didn’t know you needed:\n\n1. From everything you know about me and my workflows so far, what tools or automations am I missing that would measurably improve how I operate?\n\n2. What assumptions do you currently hold about me, my priorities, or my preferences that could be wrong and that we should vet and correct right now?\n\n3. Based on all my decision patterns and asks you’ve experienced, what am I likely to need next week or in the future that you can get ahead of and systemize?\n\n4. What skills or capabilities should you be developing and adding to our repertoire right now based on where my projects are heading and everything you know about me?\n\n5. What context about my vision, voice, or priorities are you losing between sessions from compactions that needs clear fixes so you stop getting dumber over time?\n\n6. What connections between my projects, ideas, or goals do you see that I likely haven’t made yet, and what should we build or adjust based on those connections?\n\n7. What recurring friction points have you observed in how I work that you could eliminate by building a new workflow, template, or automation without me having to ask?\n\n8. From every correction, redirect, and piece of feedback I’ve given you, what rules should you be writing into your own identity and skill files right now so you never repeat those mistakes?\n\n9. If you audited every action you’ve taken for me in the last week, which ones actually moved my goals forward and which were wasted motion we should cut permanently?\n\n10. Where are you defaulting to generic output when you have enough context on me to be building something specific, tailored, and actually useful?\n\n11. What’s one system you could build for yourself right now that would compound in value and make every future task you do for me faster or sharper?\n\n12. What errors or missed opportunities have you repeated more than once, and what self-check or guardrail can we build together so they never happen again?\n\n13. Based on everything you know about where my ecosystem is going, what should you be researching, learning, or prototyping right now without me telling you to?\n\n14. Where are you filling gaps in your knowledge about me or my projects with assumptions instead of flagging them so we can lock in the real answers?\n\n15. What’s the most valuable data, insight, or pattern buried in your memory and context files that you’re sitting on and underutilizing for my benefit?\n\n16.If you scored yourself 1-10 on how accurately you model my priorities, goals, and how I think, what’s the number, what’s dragging it down, and what specific fixes bring it up?\n\n17.What external data sources, feeds, or signals should you be pulling or can I provide so you can operate on a regular cadence that would make every decision you make about my projects sharper?\n\n18.If a brand new agent replaced you tomorrow with only my documentation, what critical things would it get wrong that you’ve learned through working with me, and how do we capture that knowledge permanently in systems?\n\n19.What workflows am I still doing manually or inefficiently that you already have enough context to fully automate or streamline if I gave you the green light?\n\n20.Based on how my thinking and priorities have evolved since we started working together, what parts of your current approach are outdated and need to be rebuilt?\n\n21.What’s the single highest leverage thing you could do in the next 24 hours that I haven’t asked for but would meaningfully accelerate where I’m trying to go?\n\nSave these and use them to help you.",
+    "createdAt": "Thu Feb 19 19:49:32 +0000 2026",
+    "replyCount": 59,
+    "retweetCount": 93,
+    "likeCount": 1096,
+    "conversationId": "2024572078314451146",
+    "author": {
+      "username": "kloss_xyz",
+      "name": "klöss"
+    },
+    "authorId": "1470503969789251589",
+    "media": [
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HBi5kbBbUAIv_hr.jpg",
+        "width": 2048,
+        "height": 869,
+        "previewUrl": "https://pbs.twimg.com/media/HBi5kbBbUAIv_hr.jpg:small"
+      }
+    ]
+  },
+  {
+    "id": "2024542359611134253",
+    "text": "https://t.co/nSEqYtW4Rf",
+    "createdAt": "Thu Feb 19 17:51:27 +0000 2026",
+    "replyCount": 115,
+    "retweetCount": 174,
+    "likeCount": 1563,
+    "conversationId": "2024542359611134253",
+    "author": {
+      "username": "chamath",
+      "name": "Chamath Palihapitiya"
+    },
+    "authorId": "3291691"
+  },
+  {
+    "id": "2024585669306171888",
+    "text": "This is a picture from two of the people using FLGR-242 (Recombinant Follistatin) for the last 16 weeks.\n\n@trevorkruder the CEO of Alpha Bio Med Labs & Paramount Peptides and Me from yesterday morning in Costa Mesa post training.\n\nBoth of us are up 10+ pounds of pure skeletal muscle and 6% Body fat or lower.\n\nTrevor is 46 and 252 pounds and I AM 54 and 219 pounds. (I turn 55 Tuesday Feb 24th)\n\nBoth of us have been dosing *ONLY* 2.5mg per week for 12 weeks and 5mg for the last 4 weeks.\n\nPlease understand neither of us is *DIETING*.\n\nWe are eating whatever we want whenever we want.\n\nBoth of us are the biggest and leanest we have ever been in our entire lives.\n\nFLGR-242 is THE Holy Grail Agent for Modulating Body Composition to more muscle and less fat.\n\nThis product is a miracle molecule and will definitely change the world for biohackers, body builders, performance enhancement enthusiasts and most of all, GLP-1 peptide users who suffer from muscle loss because their lifestyle is *not optimal*.\n\nAvailable ONLY from BioLongevity Labs, Alpha Bio Med Labs and Paramount Peptides.\n\nBioLongevity Labs expects to be restocked with FLGR-242 next week!\n\nGet on the Waiting List Now:\nhttps://t.co/CzInfyC4pL",
+    "createdAt": "Thu Feb 19 20:43:33 +0000 2026",
+    "replyCount": 56,
+    "retweetCount": 25,
+    "likeCount": 447,
+    "conversationId": "2024585669306171888",
+    "author": {
+      "username": "JayCampbell333",
+      "name": "Jay Campbell"
+    },
+    "authorId": "2278427059",
+    "media": [
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HBjFhq8XcAAk5Aa.jpg",
+        "width": 1280,
+        "height": 2048,
+        "previewUrl": "https://pbs.twimg.com/media/HBjFhq8XcAAk5Aa.jpg:small"
+      }
+    ]
+  },
+  {
+    "id": "2024488264808165543",
+    "text": "This is the smartest counter I’ve seen to ai taking over jobs, in the short term.  \n\nIs the ((aggregate tokens cost to do what an employee does + plus fully encumbered developer and maintenance costs ) / (fully encumbered employee cost ) )<= productivity ?\n\nIf it takes 8 Claude agents, at $300 for tokens, per day, plus $200 per day in dev/maint , to do what an employee does per day, at a fully encumbered cost of $1200.  \n\nThat’s 2600/1200.  But then you need to factor in the productivity rate. \n\nIs it more than 2.16 x productive ? Are there qualitative issues like morale, morality, whatever , that can’t be quantified, that need to go into the decision?\n\nWhat is the going forward progression of burdened costs for the tokens ?\n\nCurious what people think about this ?",
+    "createdAt": "Thu Feb 19 14:16:30 +0000 2026",
+    "replyCount": 871,
+    "retweetCount": 425,
+    "likeCount": 5768,
+    "conversationId": "2024488264808165543",
+    "author": {
+      "username": "mcuban",
+      "name": "Mark Cuban"
+    },
+    "authorId": "16228398",
+    "quotedTweet": {
+      "id": "2024157675538243661",
+      "text": "What Happens When AI Tokens Cost More Than Your Employees?\n\n@Jason:\n\n“We, with our agents, hit $300/day per agent using the Claude API, like instantly. And that was doing, maybe, 10 or 20%. That's $100k/year per agent.”\n\n@chamath:\n\n“We're getting to a place where we have to basically now say, ‘What is the token budget that we're willing to give our best devs?’”\n\n“And then if you aggregate it across all people, you can clearly see a trend where you're like, ‘Well, hold on a second, now they need to be at least 2x as productive as another employee.’”\n\n“That is actively happening inside my business, because otherwise I'll run out of money.”\n\nJason:\n\n“Yeah. This is a very interesting trend that you're not going to hear anybody else talk about, but when do tokens outpace the salary of the employee?”\n\n“Because you're about to hit it. I'm about to hit it.”",
+      "createdAt": "Wed Feb 18 16:22:51 +0000 2026",
+      "replyCount": 428,
+      "retweetCount": 369,
+      "likeCount": 3056,
+      "conversationId": "2024157675538243661",
+      "author": {
+        "username": "theallinpod",
+        "name": "The All-In Podcast"
+      },
+      "authorId": "1234260054368342016",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2024157005355663361/img/Ec1fLqrhUCtLtdra.jpg",
+          "width": 1080,
+          "height": 1920,
+          "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2024157005355663361/img/Ec1fLqrhUCtLtdra.jpg:small",
+          "videoUrl": "https://video.twimg.com/amplify_video/2024157005355663361/vid/avc1/1080x1920/xHUdAf2kT43kBNkl.mp4?tag=21",
+          "durationMs": 42733
+        }
+      ]
+    }
+  },
+  {
+    "id": "2024052840562372830",
+    "text": "ElevenLabs just lost its moat 🤯\n\nSomeone just dropped Voicebox, and it clones any voice from just a 3-second audio clip, running 100% locally on your machine.\n\n100% Open Source https://t.co/bPldsB7eeU",
+    "createdAt": "Wed Feb 18 09:26:16 +0000 2026",
+    "replyCount": 243,
+    "retweetCount": 906,
+    "likeCount": 9646,
+    "conversationId": "2024052840562372830",
+    "author": {
+      "username": "oliviscusAI",
+      "name": "Oliver Prompts"
+    },
+    "authorId": "1526717916934176769",
+    "media": [
+      {
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HBbhK9LbQAErJCO.jpg",
+        "width": 1332,
+        "height": 1384,
+        "previewUrl": "https://pbs.twimg.com/media/HBbhK9LbQAErJCO.jpg:small"
+      }
+    ]
+  }
+]

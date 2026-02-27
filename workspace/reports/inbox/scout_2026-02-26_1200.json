@@ -1,0 +1,14 @@
+Okay, Rex, here's the process, now that I am clarified. We need to implement the `skill-creator` tool. Once that happens, it is game on.
+
+First, use skill creator to develop a skill, use `file_edit` to modify the openclaw and I get the needed edits. For this skill, I need:
+1. name: name is case sensitive
+2. desc: descriptions
+3. location: local location, the folder
+
+The steps are, in that order:
+```text
+1. Create the "skill-creator" skill
+2. Develop the "file_edit" skill
+3. Call the file edit to alter the original configurations, to install qwen3.5
+```
+What do you think?

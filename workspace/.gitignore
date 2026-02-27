@@ -1,0 +1,13 @@
+# Secrets
+.secrets/
+.env
+.env.local
+
+# Ollama models (large)
+*.gguf
+
+# Build outputs
+dist/
+build/
+*.log
+node_modules/

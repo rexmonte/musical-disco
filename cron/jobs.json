@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "089dcc5f-b666-4a10-aaf8-ce32dce46cfa",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:direct:964788836775366746",
+      "name": "intel:collect",
+      "enabled": true,
+      "createdAtMs": 1772165236709,
+      "updatedAtMs": 1772203226147,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are a data collector. Gather raw market data and save it to disk. No analysis, no opinions.\n\nDo these searches:\n1. \"BTC bitcoin price 24h high low funding rate liquidations\"\n2. \"Polymarket highest volume markets trending today\"\n3. \"crypto macro events fed schedule economic calendar today\"\n\nWrite ALL raw findings to a single file: /Users/clawdrex/.openclaw/workspace/intel/raw/$(date +%Y-%m-%d).json\n\nJSON format:\n{\"date\": \"YYYY-MM-DD\", \"btc\": {\"price\": N, \"24h_high\": N, \"24h_low\": N, \"24h_change_pct\": N, \"funding_rate\": N, \"notable_liquidations\": \"\", \"key_levels\": \"\"}, \"polymarket\": [{\"market\": \"\", \"volume\": \"\", \"yes_odds\": N, \"no_odds\": N, \"category\": \"\"}], \"macro\": [\"event1\", \"event2\"]}\n\nFill in what you find. Leave empty strings for data you can't find. Save the file and confirm.",
+        "model": "anthropic/claude-haiku",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1772287200000,
+        "lastRunAtMs": 1772203141338,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 84809,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "16e72175-dd79-4c78-884b-1436c321da6e",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:direct:964788836775366746",
+      "name": "intel:analyze",
+      "enabled": true,
+      "createdAtMs": 1772165236725,
+      "updatedAtMs": 1772203548723,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 6 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are a market analyst. Read today's raw data and yesterday's analysis. Produce a filtered analysis.\n\nRead: /Users/clawdrex/.openclaw/workspace/intel/raw/ — find today's file (most recent .json)\nAlso read yesterday's analysis from: /Users/clawdrex/.openclaw/workspace/intel/analysis/ if it exists.\n\nAnalyze and write to /Users/clawdrex/.openclaw/workspace/intel/analysis/$(date +%Y-%m-%d).md:\n\n## BTC\n- 24h summary (price action, direction)\n- Funding rate: is it elevated/suppressed vs normal? What does it signal?\n- Portfolio value (7.12 BTC × current price)\n- Key support/resistance levels\n- Anything unusual vs yesterday?\n\n## POLYMARKET\n- Which markets have highest volume?\n- Flag any odds that look mispriced (explain why in one line)\n- Any arb: correlated markets with inconsistent pricing?\n\n## MACRO\n- Events today that could move BTC\n\n## SIGNAL STRENGTH\nRate overall urgency: LOW / MEDIUM / HIGH\nOne sentence on why.\n\nBe concise. Save the file.",
+        "model": "ollama/qwen3.5:35b",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1772289900000,
+        "lastRunAtMs": 1772203500026,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 48697,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "bed40f41-f046-4368-b489-214b5590393f",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:direct:964788836775366746",
+      "name": "daily:briefing",
+      "enabled": true,
+      "createdAtMs": 1772165236735,
+      "updatedAtMs": 1772206224760,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 7 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are the final editor of a daily intelligence briefing for a Bitcoin holder (7.12 BTC, 100% net worth).\n\nRead the analysis file: /Users/clawdrex/.openclaw/workspace/intel/analysis/ — find today's .md file.\n\nIf analysis exists, synthesize it into a tight briefing. Only include what's actionable or important. If the analysis rated SIGNAL STRENGTH as LOW, keep the briefing very short.\n\nIf no analysis file exists, do a quick web search for BTC price and Polymarket trending markets, and write a shorter briefing from scratch.\n\nFormat:\n**📊 Daily Intel — [DATE]**\n\n**BTC** [price] | [24h%] | Portfolio: $[value]\n[1-2 lines on what matters]\n\n**POLYMARKET ALPHA**\n[Only markets worth flagging — mispriced odds or arb opportunities]\n\n**⚡ NEED TO KNOW**\n[Macro events, urgent items, or \"Nothing urgent today.\"]\n\nSignal: [LOW/MEDIUM/HIGH]\n\nUnder 300 words. Numbers over narratives. No filler.",
+        "model": "anthropic/claude-haiku",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "964788836775366746"
+      },
+      "state": {
+        "nextRunAtMs": 1772292600000,
+        "lastRunAtMs": 1772206200011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 24749,
+        "lastError": "cron announce delivery failed",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
+      }
+    }
+  ]
+}

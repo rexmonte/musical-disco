@@ -1,0 +1,26 @@
+```json
+{
+  "tech_stack": {
+    "viral_method": "VisionClaw (Open Source Project) or WhatsApp Bridge",
+    "visionclaw_stack": [
+      "Custom iOS/Android App (Side-loaded)",
+      "Gemini Live API (WebSocket) for real-time video/audio",
+      "OpenClaw Gateway for tool execution"
+    ],
+    "whatsapp_bridge_stack": [
+      "WhatsApp Business API (via Twilio or Meta)",
+      "OpenClaw 'whatsapp' channel plugin",
+      "Contact named 'Ace' or 'AI' in phone book"
+    ]
+  },
+  "streamlining_process": {
+    "visionclaw": "Real-time streaming. No manual sharing required. The app runs in background and listens/watches continuously.",
+    "whatsapp_method": "Voice Command: 'Hey Meta, send a photo to Ace.' (Native Meta integration). This is the smoothest official path.",
+    "ios_shortcuts": "Create a shortcut 'Send to Sight' that accepts an image and POSTs to OpenClaw webhook. Workflow: 'Hey Meta, take a photo' -> Share -> Tap Shortcut."
+  },
+  "recommendation": {
+    "immediate_action": "Set up the Telegram/WhatsApp bridge in OpenClaw. This allows the 'Hey Meta, send photo to Ace' workflow immediately without custom app development.",
+    "advanced_path": "Investigate 'VisionClaw' GitHub repo for real-time video streaming capabilities if low-latency visual assistance is needed."
+  }
+}
+```
