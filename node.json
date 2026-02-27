@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "nodeId": "9f20bcbd-d86b-41a8-8fc0-10e583789f48",
-  "displayName": "Ubuntu-Server",
+  "nodeId": "GENERATE_NEW_UUID_ON_DEPLOY",
+  "displayName": "your-hostname",
   "gateway": {
     "host": "127.0.0.1",
     "port": 18789,

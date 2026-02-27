@@ -1,10 +1,42 @@
+# ═══════════════════════════════════════════════════════════
+# Secrets & credentials — NEVER commit real values
+# ═══════════════════════════════════════════════════════════
 credentials/
-discord/
-telegram/
-*.bak*
-*.safe
-logs/
-clouderoute.rtf
-Untitled.rtf
+.env
+.env.local
+.env.production
+*.secret
+*.pem
+
+# ═══════════════════════════════════════════════════════════
+# Runtime state — regenerated on deploy
+# ═══════════════════════════════════════════════════════════
 agents/*/sessions/
 *.jsonl
+logs/
+*.log
+*.sock
+node_modules/
+__pycache__/
+*.pyc
+dist/
+build/
+*.gguf
+
+# ═══════════════════════════════════════════════════════════
+# Platform / editor artifacts
+# ═══════════════════════════════════════════════════════════
+.DS_Store
+Thumbs.db
+*.bak*
+*.safe
+*.swp
+*~
+Untitled.rtf
+clouderoute.rtf
+
+# ═══════════════════════════════════════════════════════════
+# Channel-specific (not tracked in repo)
+# ═══════════════════════════════════════════════════════════
+discord/
+telegram/
