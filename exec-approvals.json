@@ -1,8 +1,8 @@
 {
   "version": 1,
   "socket": {
-    "path": "/home/user/musical-disco/exec-approvals.sock",
-    "token": "hx33mOBnAwe8GdCfmw9FUT0ODbX5nz1V"
+    "path": "/path/to/openclaw/exec-approvals.sock",
+    "token": "REDACTED_GENERATE_ON_DEPLOY"
   },
   "defaults": {},
   "agents": {}
