@@ -1,12 +1,13 @@
 {
   "providers": {
     "ollama": {
-      "baseUrl": "http://0.0.0.0:11434/v1",
-      "api": "openai-completions",
+      "baseUrl": "http://127.0.0.1:11434",
+      "api": "ollama",
       "models": [
         {
-          "id": "qwen3:30b-a3b",
-          "name": "qwen3:30b-a3b",
+          "id": "ollama/qwen3:30b-a3b",
+          "name": "Qwen3 30B MoE (3B active)",
+          "api": "ollama",
           "reasoning": false,
           "input": [
             "text"
@@ -17,80 +18,13 @@
             "cacheRead": 0,
             "cacheWrite": 0
           },
-          "contextWindow": 128000,
-          "maxTokens": 8192,
-          "api": "openai-completions"
-        },
-        {
-          "id": "qwen3:14b",
-          "name": "qwen3:14b",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 128000,
-          "maxTokens": 8192,
-          "api": "openai-completions"
-        },
-        {
-          "id": "qwen3:8b",
-          "name": "qwen3:8b",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 128000,
-          "maxTokens": 8192,
-          "api": "openai-completions"
-        },
-        {
-          "id": "qwen3-coder:30b",
-          "name": "qwen3-coder:30b",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 128000,
-          "maxTokens": 8192,
-          "api": "openai-completions"
-        },
-        {
-          "id": "qwen3.5:35b",
-          "name": "qwen3.5:35b",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 128000,
+          "contextWindow": 131072,
           "maxTokens": 8192
         },
         {
-          "id": "qwen2.5-coder:14b",
-          "name": "qwen2.5-coder:14b",
+          "id": "ollama/qwen3:14b",
+          "name": "Qwen3 14B",
+          "api": "ollama",
           "reasoning": false,
           "input": [
             "text"
@@ -101,7 +35,59 @@
             "cacheRead": 0,
             "cacheWrite": 0
           },
-          "contextWindow": 128000,
+          "contextWindow": 40960,
+          "maxTokens": 8192
+        },
+        {
+          "id": "ollama/qwen3:8b",
+          "name": "Qwen3 8B",
+          "api": "ollama",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 40960,
+          "maxTokens": 8192
+        },
+        {
+          "id": "ollama/qwen3-coder:30b",
+          "name": "Qwen3 Coder 30B MoE",
+          "api": "ollama",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
+          "maxTokens": 8192
+        },
+        {
+          "id": "ollama/qwen3.5:35b",
+          "name": "Qwen3.5 35B MoE (multimodal)",
+          "api": "ollama",
+          "reasoning": false,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
           "maxTokens": 8192
         }
       ],
@@ -112,7 +98,7 @@
       "api": "openai-completions",
       "models": [
         {
-          "id": "auto",
+          "id": "openrouter/auto",
           "name": "OpenRouter Auto",
           "reasoning": false,
           "input": [
@@ -129,7 +115,50 @@
           "maxTokens": 8192
         }
       ],
-      "apiKey": "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"
+      "apiKey": "${OPENROUTER_API_KEY}"
+    },
+    "anthropic": {
+      "baseUrl": "https://api.anthropic.com/v1",
+      "apiKey": "${ANTHROPIC_API_KEY}",
+      "api": "anthropic",
+      "models": [
+        {
+          "id": "anthropic/claude-sonnet-4-20250514",
+          "name": "Claude Sonnet 4",
+          "api": "anthropic",
+          "reasoning": false,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0.003,
+            "output": 0.015,
+            "cacheRead": 0.0003,
+            "cacheWrite": 0.00375
+          },
+          "contextWindow": 200000,
+          "maxTokens": 16384
+        },
+        {
+          "id": "anthropic/claude-haiku",
+          "name": "Claude Haiku 3.5",
+          "api": "anthropic",
+          "reasoning": false,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0.0008,
+            "output": 0.004,
+            "cacheRead": 0.00008,
+            "cacheWrite": 0.001
+          },
+          "contextWindow": 200000,
+          "maxTokens": 8192
+        }
+      ]
     }
   }
 }

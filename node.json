@@ -1,10 +1,10 @@
 {
   "version": 1,
   "nodeId": "9f20bcbd-d86b-41a8-8fc0-10e583789f48",
-  "displayName": "Mac-Mini-M4",
+  "displayName": "Ubuntu-Server",
   "gateway": {
-    "host": "umbrel.local",
-    "port": 3000,
+    "host": "127.0.0.1",
+    "port": 18789,
     "tls": false
   }
 }
