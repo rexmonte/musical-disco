@@ -1,0 +1,20 @@
+{
+  "summary": "High-yield opportunities found in DeFi stablecoin pools and upcoming ETH L2 airdrops.",
+  "opportunities": [
+    {
+      "type": "DeFi Yield",
+      "asset": "USDC/USDT",
+      "platform": "Curve via Convex",
+      "apy": "18.5%",
+      "risk": "Smart contract risk (low), Impermanent loss (none)"
+    },
+    {
+      "type": "Airdrop Farm",
+      "project": "Scroll ZK-EVM",
+      "action": "Bridge assets + 1 swap per week",
+      "cost": "~$5 gas/week",
+      "potential": "$1k-$5k airdrop Q3 2026"
+    }
+  ],
+  "risk_assessment": "Stablecoin depeg risk is minimal currently. Scroll interaction is low cost."
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "nodeId": "9f20bcbd-d86b-41a8-8fc0-10e583789f48",
+  "displayName": "Mac-Mini-M4",
+  "gateway": {
+    "host": "umbrel.local",
+    "port": 3000,
+    "tls": false
+  }
+}

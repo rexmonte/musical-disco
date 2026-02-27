@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "profiles": {
+    "ollama:manual": {
+      "type": "token",
+      "provider": "ollama",
+      "token": "123"
+    },
+    "openrouter:default": {
+      "type": "api_key",
+      "provider": "openrouter",
+      "key": "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"
+    },
+    "openrouter:manual": {
+      "type": "token",
+      "provider": "openrouter",
+      "token": "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"
+    },
+    "google:default": {
+      "type": "api_key",
+      "provider": "google",
+      "key": "AIzaSyBnN83m64p4AtkqVkyjhkyVYYwiqiWPOOs"
+    }
+  },
+  "lastGood": {
+    "ollama": "ollama:manual",
+    "openrouter": "openrouter:default",
+    "google": "google:default"
+  },
+  "usageStats": {
+    "openrouter:default": {
+      "lastUsed": 1771874423611,
+      "errorCount": 0,
+      "lastFailureAt": 1771866894820
+    },
+    "ollama:manual": {
+      "errorCount": 0,
+      "lastFailureAt": 1772071729702,
+      "lastUsed": 1772084482395
+    },
+    "google:default": {
+      "lastUsed": 1772089933664,
+      "errorCount": 0
+    }
+  }
+}

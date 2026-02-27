@@ -1,0 +1,19 @@
+{
+  "id": "7611263c-8dd1-4cc9-881e-6c01286c1088",
+  "enqueuedAt": 1772206224407,
+  "channel": "discord",
+  "to": "channel:964788836775366746",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "**📊 Morning Intel — Fri Feb 27**\n\n**BTC** $66,212 | down 2.71% | Portfolio ~$471K\nBroke below recent range, sitting on $66K support. Two PPI prints dropping today — hot = more pain, cool = bounce.\n\n**Polymarket Alpha**\n• **BTC ATH (18%) vs $110K EOY (26.5%)** — 8.5pp gap on nearly identical outcomes. Arb signal still live.\n• **US strikes Iran by Feb 28 @ 24%** — expires tomorrow. Binary catalyst, $6.2M in 24h volume. Conviction-only play.\n• BTC $150K–$190K range all flat at 6.5–7.5% — stale pricing, potentially exploitable.\n\n**⚡ Key Today**\n• **Core PPI** — forecast 0.3% vs prev 0.7%. Biggest macro print this week. Determines if this dip deepens or reverses.\n• Q4 GDP revision expected weak — downward revision = dovish Fed narrative = medium-term BTC tailwind.\n• Iran strike series dominating Polymarket volume ($25M/24h). Geopolitical tail risk elevated.\n\nSignal: **MEDIUM** — PPI is the swing factor today. 🔧",
+      "mediaUrls": []
+    }
+  ],
+  "threadId": null,
+  "replyToId": null,
+  "bestEffort": false,
+  "retryCount": 3,
+  "lastAttemptAt": 1772219125541,
+  "lastError": "Unknown Channel"
+}

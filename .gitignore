@@ -1,0 +1,10 @@
+credentials/
+discord/
+telegram/
+*.bak*
+*.safe
+logs/
+clouderoute.rtf
+Untitled.rtf
+agents/*/sessions/
+*.jsonl

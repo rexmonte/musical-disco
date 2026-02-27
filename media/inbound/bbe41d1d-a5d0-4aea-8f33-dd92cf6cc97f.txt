@@ -1,0 +1,35 @@
+03:39:07 info typing TTL reached (2m); stopping typing indicator
+03:39:18 debug diagnostic {"subsystem":"diagnostic"} run active check: sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 active=true
+03:39:26 debug diagnostic {"subsystem":"diagnostic"} run active check: sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 active=true
+03:40:01 debug diagnostic {"subsystem":"diagnostic"} run active check: sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 active=true
+03:40:22 debug agent/embedded {"subsystem":"agent/embedded"} embedded run tool start: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec tool=read toolCallId=ollama_call_c94fdf33-f886-43c3-8336-2a797886728c
+03:40:22 debug agent/embedded {"subsystem":"agent/embedded"} embedded run tool end: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec tool=read toolCallId=ollama_call_c94fdf33-f886-43c3-8336-2a797886728c
+03:40:22 debug agent/embedded {"subsystem":"agent/embedded"} embedded run tool start: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec tool=read toolCallId=ollama_call_2b031a88-8899-4e5e-b8d8-74ffae0f250a
+03:40:22 debug agent/embedded {"subsystem":"agent/embedded"} embedded run tool end: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec tool=read toolCallId=ollama_call_2b031a88-8899-4e5e-b8d8-74ffae0f250a
+03:40:22 debug agent/embedded {"subsystem":"agent/embedded"} embedded run tool start: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec tool=read toolCallId=ollama_call_ec4ab4f7-734b-47f7-bf91-cb69baac7949
+03:40:22 debug agent/embedded {"subsystem":"agent/embedded"} embedded run tool end: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec tool=read toolCallId=ollama_call_ec4ab4f7-734b-47f7-bf91-cb69baac7949
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run agent end: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec isError=false
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run compaction start: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run prompt end: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 durationMs=216149
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} run cleared: sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 totalActive=0
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run done: runId=c7aa5fd6-8693-42bb-961a-8b3ef8b8c4ec sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 durationMs=216193 aborted=false
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} lane task done: lane=main durationMs=216196 active=0 queued=0
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} lane task done: lane=session:agent:main:main durationMs=216202 active=0 queued=0
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} lane enqueue: lane=session:agent:main:main queueSize=1
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} lane dequeue: lane=session:agent:main:main waitMs=1 queueSize=0
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} lane enqueue: lane=main queueSize=1
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} lane dequeue: lane=main waitMs=1 queueSize=0
+03:40:43 warn agent/embedded {"subsystem":"agent/embedded"} low context window: ollama/qwen3-fast ctx=16384 (warn<32000) source=modelsConfig
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run start: runId=9e219aab-98a9-484d-9e75-729c17e970b3 sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 provider=ollama model=qwen3-fast thinking=off messageChannel=discord
+03:40:43 debug diagnostic {"subsystem":"diagnostic"} run registered: sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 totalActive=1
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run prompt start: runId=9e219aab-98a9-484d-9e75-729c17e970b3 sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run compaction start: runId=9e219aab-98a9-484d-9e75-729c17e970b3
+03:40:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run agent start: runId=9e219aab-98a9-484d-9e75-729c17e970b3
+03:40:44 warn discord/monitor {"subsystem":"discord/monitor"} {"listener":"DiscordMessageListener","event":"MESSAGE_CREATE","durationMs":217409,"duration":"217.4 seconds"} Slow listener detected
+03:41:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run agent end: runId=9e219aab-98a9-484d-9e75-729c17e970b3 isError=false
+03:41:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run compaction start: runId=9e219aab-98a9-484d-9e75-729c17e970b3
+03:41:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run prompt end: runId=9e219aab-98a9-484d-9e75-729c17e970b3 sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 durationMs=60211
+03:41:43 debug diagnostic {"subsystem":"diagnostic"} run cleared: sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 totalActive=0
+03:41:43 debug agent/embedded {"subsystem":"agent/embedded"} embedded run done: runId=9e219aab-98a9-484d-9e75-729c17e970b3 sessionId=e62341a8-00c7-4cf0-9684-ac26a06792b2 durationMs=60242 aborted=false
+03:41:43 debug diagnostic {"subsystem":"diagnostic"} lane task done: lane=main durationMs=60247 active=0 queued=0
+03:41:43 debug diagnostic {"subsystem":"diagnostic"} lane task done: lane=session:agent:main:main durationMs=60249 active=0 queued=0

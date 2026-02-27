@@ -1,0 +1,42 @@
+{
+  "summary": "High-yield passive income strategies optimized for a $95k income earner with limited active hours (12h night shift). Focus is on 'set and forget' DeFi protocols, tokenized real-world assets (RWAs), and automated digital commerce.",
+  "opportunities": [
+    {
+      "type": "DeFi Stablecoin Yield",
+      "asset": "USDC/USDT",
+      "platform": "Curve Finance (via Convex)",
+      "apy": "12-18%",
+      "details": "Providing liquidity to 3pool or similar stablecoin pools. Boosted yields via Convex Finance. Minimal impermanent loss risk as assets are pegged.",
+      "action_required": "Monthly rebalancing (optional)"
+    },
+    {
+      "type": "Tokenized T-Bills (RWA)",
+      "asset": "OUSG / USDY",
+      "platform": "Ondo Finance / Flux",
+      "apy": "5-7% (Risk-Free Rate +)",
+      "details": "On-chain exposure to US Treasuries. Highly defensive strategy suitable for preserving capital while earning better-than-bank rates.",
+      "action_required": "One-time deposit"
+    },
+    {
+      "type": "Liquid Staking",
+      "asset": "ETH -> stETH / rETH",
+      "platform": "Lido / Rocket Pool",
+      "apy": "3-5% + DeFi composability",
+      "details": "Stake ETH to earn rewards while retaining liquidity. Use stETH as collateral in Aave to borrow stablecoins for further yield farming (Looping), though this increases risk.",
+      "action_required": "Set and forget"
+    },
+    {
+      "type": "Automated Digital Products",
+      "asset": "Digital Guides / Templates",
+      "platform": "Gumroad / Notion",
+      "apy": "Variable (High ROI)",
+      "details": "Create specific guides relevant to night shift lifestyle (e.g., 'Biohacking the Night Shift', 'Sleep Optimization for Nurses'). Market via automated social scheduling.",
+      "action_required": "Upfront creation time (20h), then automated sales"
+    }
+  ],
+  "risk_assessment": {
+    "defi_smart_contract": "Medium. Diversify across battle-tested protocols (Curve, Aave) to mitigate single-point failure.",
+    "stablecoin_depeg": "Low to Medium. Stick to major stables (USDC, USDT, DAI). Avoid algorithmic stables for this portfolio.",
+    "regulatory": "Low for personal holding, but keep tax records for all DeFi transactions."
+  }
+}

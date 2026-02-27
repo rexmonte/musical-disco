@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "/Users/clawdrex/.openclaw/exec-approvals.sock",
+    "token": "hx33mOBnAwe8GdCfmw9FUT0ODbX5nz1V"
+  },
+  "defaults": {},
+  "agents": {}
+}
