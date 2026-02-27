@@ -9,6 +9,8 @@
 #
 # Environment:
 #   AUTH_TOKEN, CT0 — manual auth (or use --chrome-profile flag)
+#     NOTE: Credentials are passed via BIRD_AUTH_TOKEN/BIRD_CT0 env vars
+#     to avoid exposing them in process listings (ps aux).
 #   BOOKMARKS_STATE — path to state file for tracking last-seen ID
 
 set -euo pipefail
@@ -26,9 +28,11 @@ else
   CMD+=("$COUNT")
 fi
 
-# Add auth from env if available
+# Pass auth via environment variables instead of CLI args to avoid
+# exposing credentials in process listings (visible via `ps aux`).
 if [[ -n "${AUTH_TOKEN:-}" ]] && [[ -n "${CT0:-}" ]]; then
-  CMD+=(--auth-token "$AUTH_TOKEN" --ct0 "$CT0")
+  export BIRD_AUTH_TOKEN="$AUTH_TOKEN"
+  export BIRD_CT0="$CT0"
 fi
 
 # Pass through any extra flags

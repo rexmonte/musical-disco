@@ -10,6 +10,8 @@ metadata: { "openclaw": { "emoji": "🫧", "requires": { "config": ["channels.bl
 
 BlueBubbles is OpenClaw’s recommended iMessage integration. Use the `message` tool with `channel: "bluebubbles"` to send messages and manage iMessage conversations: send texts and attachments, react (tapbacks), edit/unsend, reply in threads, and manage group participants/names/icons.
 
+> **MANDATORY APPROVAL:** All outbound actions (send, reply, sendAttachment, sendWithEffect) require explicit user confirmation before execution. Show the recipient, message content, and any attachments to the user and wait for approval. Reactions and read-only operations (listing) do not require approval.
+
 ## Inputs to collect
 
 - `target` (prefer `chat_guid:...`; also `+15551234567` in E.164 or `user@example.com`)

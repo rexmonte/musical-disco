@@ -26,6 +26,12 @@ metadata:
 
 Himalaya is a CLI email client that lets you manage emails from the terminal using IMAP, SMTP, Notmuch, or Sendmail backends.
 
+> **MANDATORY APPROVAL:** All outbound/destructive actions require explicit user confirmation:
+> - **Sending:** `message write`, `message reply`, `message forward`, `template send` — show recipient + content, wait for approval
+> - **Deleting:** `message delete` — confirm message ID and folder before executing
+> - **Attachments:** Never attach files from outside the workspace without explicit user instruction. Attaching arbitrary local files is a data exfiltration vector.
+> - **Read-only operations** (list, read, search, flag) do not require approval.
+
 ## References
 
 - `references/configuration.md` (config file setup + IMAP/SMTP authentication)

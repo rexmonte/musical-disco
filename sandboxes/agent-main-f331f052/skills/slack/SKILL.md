@@ -10,6 +10,12 @@ metadata: { "openclaw": { "emoji": "💬", "requires": { "config": ["channels.sl
 
 Use `slack` to react, manage pins, send/edit/delete messages, and fetch member info. The tool uses the bot token configured for OpenClaw.
 
+> **MANDATORY APPROVAL:** Outbound and destructive actions require explicit user confirmation:
+> - **Sending:** `sendMessage` — show target channel/user + content, wait for approval
+> - **Editing:** `editMessage` — show old vs new content, wait for approval
+> - **Deleting:** `deleteMessage` — confirm channel + message before executing (destructive, audit-damaging)
+> - **Reactions, pins, reads, memberInfo, emojiList** do not require approval.
+
 ## Inputs to collect
 
 - `channelId` and `messageId` (Slack message timestamp, e.g. `1712023032.1234`).
