@@ -1,7 +1,7 @@
 {
   "version": 1,
   "socket": {
-    "path": "/Users/clawdrex/.openclaw/exec-approvals.sock",
+    "path": "/home/user/musical-disco/exec-approvals.sock",
     "token": "hx33mOBnAwe8GdCfmw9FUT0ODbX5nz1V"
   },
   "defaults": {},
