@@ -42,9 +42,16 @@ fi
   --reply-channel "discord" \
   --reply-to "1475007773816131635" \
   --thinking "off" \
-  --timeout 600 > "$REPORT_FILE"
+  --timeout 600 > "$REPORT_FILE" 2>&1
+EXIT_CODE=$?
+
+# If the output is empty or exit code non-zero, write an error sentinel so
+# downstream parsers don't crash on empty files.
+if [ ! -s "$REPORT_FILE" ] || [ $EXIT_CODE -ne 0 ]; then
+  echo "{\"error\": \"scout run failed\", \"exit_code\": $EXIT_CODE, \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > "$REPORT_FILE"
+fi
 
 # Log execution stats
 END_TIME=$(date +%s)
 DURATION=$((END_TIME - START_TIME))
-echo "$(date),scout,$MODEL_USED,${DURATION}s,LOCAL_OLLAMA" >> "$AUDIT_FILE"
+echo "$(date),scout,$MODEL_USED,${DURATION}s,LOCAL_OLLAMA,exit=${EXIT_CODE}" >> "$AUDIT_FILE"

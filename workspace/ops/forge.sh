@@ -29,9 +29,14 @@ cd /Users/clawdrex/.openclaw/workspace
   --reply-channel "discord" \
   --reply-to "1475007798881288252" \
   --thinking "off" \
-  --timeout 600 > "$REPORT_FILE"
+  --timeout 600 > "$REPORT_FILE" 2>&1
+EXIT_CODE=$?
+
+if [ ! -s "$REPORT_FILE" ] || [ $EXIT_CODE -ne 0 ]; then
+  echo "{\"error\": \"forge run failed\", \"exit_code\": $EXIT_CODE, \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > "$REPORT_FILE"
+fi
 
 # Log execution stats
 END_TIME=$(date +%s)
 DURATION=$((END_TIME - START_TIME))
-echo "$(date),forge,$MODEL_USED,${DURATION}s,LOCAL_OLLAMA" >> "$AUDIT_FILE"
+echo "$(date),forge,$MODEL_USED,${DURATION}s,LOCAL_OLLAMA,exit=${EXIT_CODE}" >> "$AUDIT_FILE"
