@@ -4,3 +4,9 @@
 0 7,19 * * * /Users/clawdrex/.openclaw/workspace/ops/briefing.sh >> /tmp/briefing.log 2>&1
 30 6 * * * /Users/clawdrex/.openclaw/workspace/ops/librarian.sh >> /tmp/librarian.log 2>&1
 */30 * * * * /Users/clawdrex/.openclaw/workspace/ops/vision.sh >> /tmp/vision.log 2>&1
+
+# ── Agent Supervision ──
+# Scan all agent logs for errors every 15 minutes, dump crash reports
+*/15 * * * * /Users/clawdrex/.openclaw/workspace/ops/crashwatch.sh --scan >> /tmp/crashwatch.log 2>&1
+# Generate daily crash summary at 6:45 AM (before briefing)
+45 6 * * * /Users/clawdrex/.openclaw/workspace/ops/crashwatch.sh --summary >> /tmp/crashwatch.log 2>&1

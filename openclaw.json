@@ -18,7 +18,7 @@
   "logging": {
     "level": "info",
     "consoleLevel": "info",
-    "consoleStyle": "pretty",
+    "consoleStyle": "json",
     "redactSensitive": "tools"
   },
   "auth": {
