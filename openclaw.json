@@ -254,10 +254,10 @@
       "model": {
         "primary": "ollama/qwen3.5:35b",
         "fallbacks": [
-          "coder",
-          "haiku",
-          "flash",
-          "sonnet"
+          "ollama/qwen3-coder:30b",
+          "anthropic/claude-haiku",
+          "google/gemini-2.5-flash",
+          "anthropic/claude-sonnet-4-20250514"
         ]
       },
       "models": {
