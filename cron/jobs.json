@@ -2,13 +2,71 @@
   "version": 1,
   "jobs": [
     {
+      "id": "4d4c945b-1bf8-4b42-8fc7-4fd7312bc805",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:direct:964788836775366746",
+      "name": "bookmarks:collect",
+      "enabled": true,
+      "createdAtMs": 1772316305797,
+      "updatedAtMs": 1772316305797,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are a bookmark collector. Fetch new X bookmarks and append them to the dataset.\n\nStep 1: Read /Users/clawdrex/.openclaw/workspace/bookmarks/data.json and note the lastHighWatermark value.\n\nStep 2: Run this command to fetch new bookmarks since the last watermark:\npython3 /Users/clawdrex/.openclaw/workspace/x-bookmarks/scripts/fetch_bookmarks_cookies.py --count 50 --since-id <WATERMARK>\n\nReplace <WATERMARK> with the actual lastHighWatermark value from data.json.\n\nStep 3: Parse the JSON output. For each bookmark, transform it into this format and append to the bookmarks array in data.json:\n{\n  \"id\": \"<tweet_id>\",\n  \"text\": \"<text>\",\n  \"createdAt\": \"<createdAt>\",\n  \"author\": { \"username\": \"<username>\", \"name\": \"<name>\" },\n  \"url\": \"<url>\",\n  \"engagement\": { \"likes\": <likeCount>, \"retweets\": <retweetCount>, \"replies\": <replyCount>, \"views\": <viewCount as int>, \"bookmarks\": <bookmarkCount> },\n  \"media\": <media array>,\n  \"_meta\": { \"firstSeenAt\": \"<current ISO timestamp>\", \"processedAt\": null, \"category\": null, \"tags\": [], \"alphaScore\": null, \"alphaType\": null }\n}\n\nStep 4: Deduplicate — skip any bookmark whose id already exists in data.json.\n\nStep 5: Update lastHighWatermark to the highest tweet id seen. Update lastFetchAt to current ISO timestamp. Save data.json.\n\nStep 6: Report how many new bookmarks were added (or 0 if none).\n\nIf the fetch command returns an empty array or fails, just report that and do not modify data.json.",
+        "model": "anthropic/claude-haiku-4-5-20251001",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1772370000000
+      }
+    },
+    {
+      "id": "934e1253-f96e-4274-9e81-51e45a5ca201",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:direct:964788836775366746",
+      "name": "bookmarks:analyze",
+      "enabled": true,
+      "createdAtMs": 1772316305797,
+      "updatedAtMs": 1772316305797,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 5 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are a bookmark analyst. Process unanalyzed bookmarks, categorize them, score their alpha value, and update the interest profile.\n\nStep 1: Read /Users/clawdrex/.openclaw/workspace/bookmarks/data.json. Find all bookmarks where _meta.processedAt is null. If none found, report \"No unprocessed bookmarks\" and stop.\n\nStep 2: For each unprocessed bookmark, analyze the text and set:\n- _meta.category: one of quant_trading, ai_agents, local_models, health_peptides, tools_productivity, economics_politics, entertainment, or a NEW category if none fit\n- _meta.tags: array of relevant keywords (e.g. [\"polymarket\", \"kelly-criterion\", \"arbitrage\"])\n- _meta.alphaScore: 0-10 rating of actionable value for a Polymarket quant trader / AI builder / health optimizer\n  - 8-10: Directly actionable strategy, tool, or research with specific details\n  - 5-7: Useful reference or inspiration but not immediately actionable\n  - 0-4: Entertainment, noise, or already-known information\n- _meta.alphaType: strategy | tool | research | trade_setup | health | noise\n- _meta.processedAt: current ISO timestamp\n\nStep 3: For bookmarks scoring >= 6, append entries to /Users/clawdrex/.openclaw/workspace/bookmarks/alpha.md in this format:\n\n### <ALPHATYPE uppercase>: <title from tweet>\n- **Source:** @<username> (<date>) | <likes> likes\n- **URL:** <url>\n- **Alpha:** 1-2 sentences of the actual actionable insight\n- **Action:** Concrete next step Rex should take\n- **Score:** N/10\n- **Status:** OPEN\n\nAdd a date header (## YYYY-MM-DD) if one doesn't exist for today.\n\nStep 4: Recompute /Users/clawdrex/.openclaw/workspace/bookmarks/profile.json from ALL bookmarks in data.json (not just new ones). Include:\n- categories: each with count, pct, trend (rising/stable/falling/new based on last 7 days vs older), keyAuthors, keyTerms\n- topAuthors: top 10 by bookmark count with their categories\n- signals: primaryInterest, emergingInterest (fastest growing category), bookmarkVelocity (avg bookmarks/day)\n\nStep 5: Save all three files (data.json, alpha.md, profile.json). Report summary: N processed, N high-alpha, top categories.",
+        "model": "ollama/qwen3.5:35b",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1772370900000
+      }
+    },
+    {
       "id": "089dcc5f-b666-4a10-aaf8-ce32dce46cfa",
       "agentId": "main",
       "sessionKey": "agent:main:discord:direct:964788836775366746",
       "name": "intel:collect",
       "enabled": true,
       "createdAtMs": 1772165236709,
-      "updatedAtMs": 1772203226147,
+      "updatedAtMs": 1772287226602,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -19,18 +77,18 @@
       "payload": {
         "kind": "agentTurn",
         "message": "You are a data collector. Gather raw market data and save it to disk. No analysis, no opinions.\n\nDo these searches:\n1. \"BTC bitcoin price 24h high low funding rate liquidations\"\n2. \"Polymarket highest volume markets trending today\"\n3. \"crypto macro events fed schedule economic calendar today\"\n\nWrite ALL raw findings to a single file: /Users/clawdrex/.openclaw/workspace/intel/raw/$(date +%Y-%m-%d).json\n\nJSON format:\n{\"date\": \"YYYY-MM-DD\", \"btc\": {\"price\": N, \"24h_high\": N, \"24h_low\": N, \"24h_change_pct\": N, \"funding_rate\": N, \"notable_liquidations\": \"\", \"key_levels\": \"\"}, \"polymarket\": [{\"market\": \"\", \"volume\": \"\", \"yes_odds\": N, \"no_odds\": N, \"category\": \"\"}], \"macro\": [\"event1\", \"event2\"]}\n\nFill in what you find. Leave empty strings for data you can't find. Save the file and confirm.",
-        "model": "anthropic/claude-haiku",
-        "timeoutSeconds": 120
+        "model": "anthropic/claude-haiku-4-5-20251001",
+        "timeoutSeconds": 180
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772287200000,
-        "lastRunAtMs": 1772203141338,
+        "nextRunAtMs": 1772373600000,
+        "lastRunAtMs": 1772287200010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 84809,
+        "lastDurationMs": 26592,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -43,7 +101,7 @@
       "name": "intel:analyze",
       "enabled": true,
       "createdAtMs": 1772165236725,
-      "updatedAtMs": 1772203548723,
+      "updatedAtMs": 1772290093006,
       "schedule": {
         "kind": "cron",
         "expr": "45 6 * * *",
@@ -61,11 +119,11 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772289900000,
-        "lastRunAtMs": 1772203500026,
+        "nextRunAtMs": 1772376300000,
+        "lastRunAtMs": 1772289900011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 48697,
+        "lastDurationMs": 192995,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -78,7 +136,7 @@
       "name": "daily:briefing",
       "enabled": true,
       "createdAtMs": 1772165236735,
-      "updatedAtMs": 1772206224760,
+      "updatedAtMs": 1772292720015,
       "schedule": {
         "kind": "cron",
         "expr": "30 7 * * *",
@@ -88,24 +146,24 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "You are the final editor of a daily intelligence briefing for a Bitcoin holder (7.12 BTC, 100% net worth).\n\nRead the analysis file: /Users/clawdrex/.openclaw/workspace/intel/analysis/ — find today's .md file.\n\nIf analysis exists, synthesize it into a tight briefing. Only include what's actionable or important. If the analysis rated SIGNAL STRENGTH as LOW, keep the briefing very short.\n\nIf no analysis file exists, do a quick web search for BTC price and Polymarket trending markets, and write a shorter briefing from scratch.\n\nFormat:\n**📊 Daily Intel — [DATE]**\n\n**BTC** [price] | [24h%] | Portfolio: $[value]\n[1-2 lines on what matters]\n\n**POLYMARKET ALPHA**\n[Only markets worth flagging — mispriced odds or arb opportunities]\n\n**⚡ NEED TO KNOW**\n[Macro events, urgent items, or \"Nothing urgent today.\"]\n\nSignal: [LOW/MEDIUM/HIGH]\n\nUnder 300 words. Numbers over narratives. No filler.",
-        "model": "anthropic/claude-haiku",
-        "timeoutSeconds": 120
+        "message": "You are the final editor of a daily intelligence briefing for a Bitcoin holder (7.12 BTC, 100% net worth).\n\nRead the analysis file: /Users/clawdrex/.openclaw/workspace/intel/analysis/ — find today's .md file.\nAlso read: /Users/clawdrex/.openclaw/workspace/bookmarks/alpha.md — check for OPEN status items.\n\nIf analysis exists, synthesize it into a tight briefing. Only include what's actionable or important. If the analysis rated SIGNAL STRENGTH as LOW, keep the briefing very short.\n\nIf no analysis file exists, do a quick web search for BTC price and Polymarket trending markets, and write a shorter briefing from scratch.\n\nFormat:\n**📊 Daily Intel — [DATE]**\n\n**BTC** [price] | [24h%] | Portfolio: $[value]\n[1-2 lines on what matters]\n\n**POLYMARKET ALPHA**\n[Only markets worth flagging — mispriced odds or arb opportunities]\n\n**🔖 BOOKMARK ALPHA** (N open)\n[If OPEN items exist in alpha.md, list top 1-3 highest-scoring items with their @author, score, and one-line alpha summary. If no OPEN items, omit this section entirely.]\n\n**⚡ NEED TO KNOW**\n[Macro events, urgent items, or \"Nothing urgent today.\"]\n\nSignal: [LOW/MEDIUM/HIGH]\n\nUnder 300 words. Numbers over narratives. No filler.",
+        "model": "anthropic/claude-haiku-4-5-20251001",
+        "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce",
         "channel": "discord",
-        "to": "964788836775366746"
+        "to": "user:964788836775366746"
       },
       "state": {
-        "nextRunAtMs": 1772292600000,
-        "lastRunAtMs": 1772206200011,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 24749,
-        "lastError": "cron announce delivery failed",
+        "nextRunAtMs": 1772379000000,
+        "lastRunAtMs": 1772292600009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 120006,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
+        "consecutiveErrors": 0,
+        "lastError": null
       }
     }
   ]

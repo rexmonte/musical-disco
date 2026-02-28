@@ -1,0 +1,1524 @@
+{
+  "version": 1,
+  "lastFetchAt": "2026-02-28T22:03:26.420244+00:00",
+  "lastHighWatermark": "2027799026020573332",
+  "bookmarks": [
+    {
+      "id": "2027799026020573332",
+      "text": "Currently using both GHK-Cu, BPC-157, and other peptides to speed up my recovery from surgery.\n\nLink here, including initiation, dosing, and tapering rationale. \n\nhttps://t.co/1PObvA9MWH https://t.co/iA4Ktw7Kfe",
+      "createdAt": "2026-02-28 17:32:17+00:00",
+      "author": {
+        "username": "drmarlonperalta",
+        "name": "Marlon"
+      },
+      "url": "https://x.com/drmarlonperalta/status/2027799026020573332",
+      "engagement": {
+        "likes": 11,
+        "retweets": 0,
+        "replies": 1,
+        "views": 3446,
+        "bookmarks": 31
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/iA4Ktw7Kfe"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "health_peptides",
+        "tags": [
+          "peptides",
+          "bot"
+        ],
+        "alphaScore": 6,
+        "alphaType": "research"
+      }
+    },
+    {
+      "id": "2027456243447554170",
+      "text": "i ssh into my mac mini from a beach and watch an AI make me $1000/day in real time\n\nthe mac mini cost $600\n\nit paid for itself in 14 hours\n\nMacBook → Tailscale VPN → German server → Mac Mini\n\nOpenClaw agent running 24/7 via LaunchAgent\n\nthree sub-agents talking to each other:\n\none monitors polymarket, one analyzes data, one executes trades\n\nchrome headless with remote debugging - the agent literally sees my browser and clicks buttons\n\nit signs orders with my private key via EIP-712 posts to polymarket's CLOB API on polygon\n\nyesterday it found weather markets on its own\n\n62 active markets, $3.1M volume\n\nit pulled NOAA 7-day forecast through chrome CDP, compared to polymarket odds, spotted 12% mispricing\n\ni didn't tell it to do this\n\nit just started making money from weather\n\nthis morning i woke up to a message from the agent:\n\n\"i want to expand into political markets. twitter API costs $100/month. requesting budget approval from trading profits.\"\n\ni didn't program this\n\nit decided on its own that weather isn't enough\n\nit's planning its own growth strategy now\n\ni'm on my third cocktail watching sunset\n\nthe agent just closed another trade",
+      "createdAt": "2026-02-27 18:50:11+00:00",
+      "author": {
+        "username": "Argona0x",
+        "name": "Argona"
+      },
+      "url": "https://x.com/Argona0x/status/2027456243447554170",
+      "engagement": {
+        "likes": 776,
+        "retweets": 37,
+        "replies": 71,
+        "views": 133899,
+        "bookmarks": 1500
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/jML1azBUNG"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [
+          "polymarket",
+          "openclaw",
+          "mac-mini"
+        ],
+        "alphaScore": 7,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "2027503763574165517",
+      "text": "🚨 BREAKING NEWS: RFK Jr. says ~14 of 19 banned peptides can be legally compounded again by US pharmacies within a few weeks. This will ensure Americans are getting \"a good product… from ethical suppliers\" vs. black market drug dealers that provide \"substandard product\" with serious safety risks.\n\nThe 19 compounds on FDA’s Category 2 compounding safety list include:\n\n• BPC-157\n• Cathelicidin LL-37\n• Emideltide (DSIP)\n• Epitalon\n• GHK-Cu (injectable)\n• GHRP-2 (injectable/nasal)\n• GHRP-6\n• Ipamorelin acetate\n• Kisspeptin-10\n• KPV\n• Melanotan II\n• PEG-MGF (pegylated Mechano Growth Factor)\n• MOTS-C\n• Semax\n• Thymosin beta-4 fragment (LKKTETQ)\n• AOD-9604\n• CJC-1295\n• Selank acetate (TP-7)\n• Thymosin-alpha 1 (Ta1)\n\nThe five least likely to be legalized in a policy shift would be those with the most troubling safety signals or the weakest human data — for example: Melanotan II, Cathelicidin LL-37, GHRP-2, Ipamorelin acetate, and CJC-1295 — because of documented serious adverse events or other red flags in FDA’s risk assessment.",
+      "createdAt": "2026-02-27 21:59:01+00:00",
+      "author": {
+        "username": "DrCamRx",
+        "name": "Dr. Cameron Maximus🤴🏻 🥷🏻 🧙🏻‍♂️ 🤵‍♂️"
+      },
+      "url": "https://x.com/DrCamRx/status/2027503763574165517",
+      "engagement": {
+        "likes": 3890,
+        "retweets": 429,
+        "replies": 114,
+        "views": 678447,
+        "bookmarks": 2373
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/uGepTh1Qr9"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "health_peptides",
+        "tags": [
+          "peptides"
+        ],
+        "alphaScore": 4,
+        "alphaType": "research"
+      }
+    },
+    {
+      "id": "2023461240300073076",
+      "text": "https://t.co/F0UIlJ6zuW",
+      "createdAt": "2026-02-16 18:15:28+00:00",
+      "author": {
+        "username": "matteopelleg",
+        "name": "Matteo Pellegrini"
+      },
+      "url": "https://x.com/matteopelleg/status/2023461240300073076",
+      "engagement": {
+        "likes": 231,
+        "retweets": 15,
+        "replies": 19,
+        "views": 22435,
+        "bookmarks": 102
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 0,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2027416335689638245",
+      "text": "Obsidian 1.12 is now available to everyone!\n\n- Obsidian CLI\n- Bases search\n- Image resizing\n- Automatically clean up unused images\n- Better copy/paste into rich text apps like Google Docs\n- Native iOS share sheet https://t.co/qZQFkBzUve",
+      "createdAt": "2026-02-27 16:11:36+00:00",
+      "author": {
+        "username": "obsdmd",
+        "name": "Obsidian"
+      },
+      "url": "https://x.com/obsdmd/status/2027416335689638245",
+      "engagement": {
+        "likes": 5840,
+        "retweets": 530,
+        "replies": 133,
+        "views": 722903,
+        "bookmarks": 2845
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/qZQFkBzUve"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "tools_productivity",
+        "tags": [
+          "obsidian"
+        ],
+        "alphaScore": 6,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2027373906592457186",
+      "text": "How to start winning on Polymarket using mathematics & statistics - explained by a Polymarket quant.\n\nStop trying to vibe-code Polymarket bot until you learn those 3 main Prediction markets formulas. \n\n1) Avellaneda-Stoikov optimal spread\n\nThe foundation framework modern quantitative market making. Every serious market making desk uses some version of it.\n \n• Reservation price formula: \n\nr = s − q × γ × σ² × (T − t)  \n\n• The optimal spread:\n\nδ = γσ²(T − t) + (2/γ) × ln(1 + γ/κ)\n\n• Adapted to prediction markets:\n\nlogit(p) = ln(p / (1−p))\n\n// \n\n2) Empirical Kelly formula with Monte Carlo\n\nKelly tells you how much to size each trade for maximum long-run growth.\n\nNaive Kelly risks ruin. Empirical Kelly (Monte Carlo–tested) aims for steady compounding.\n\n• Empirical Kelly: \n\nf_empirical = f_kelly × (1 − CV_edge)\n\n// \n\n3) VPIN and toxicity detection\n\nVPIN measures imbalance between buy and sell volume over rolling windows. \n\n• VPIN formula for PM: \n\nVPIN = |V_buy − V_sell| / (V_buy + V_sell)\n\nRead Roan’s full article to stop gambling on Polymarket and build your own edge with math.",
+      "createdAt": "2026-02-27 13:23:00+00:00",
+      "author": {
+        "username": "0xMovez",
+        "name": "Movez"
+      },
+      "url": "https://x.com/0xMovez/status/2027373906592457186",
+      "engagement": {
+        "likes": 643,
+        "retweets": 65,
+        "replies": 24,
+        "views": 81100,
+        "bookmarks": 1348
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/jLiPDRNeNz"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [
+          "polymarket",
+          "bot"
+        ],
+        "alphaScore": 6,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "1913253287299580072",
+      "text": "https://t.co/jZKpgOvf7q",
+      "createdAt": "2025-04-18 15:28:24+00:00",
+      "author": {
+        "username": "tulipking",
+        "name": "Tulip King 🌷"
+      },
+      "url": "https://x.com/tulipking/status/1913253287299580072",
+      "engagement": {
+        "likes": 645,
+        "retweets": 79,
+        "replies": 46,
+        "views": 134201,
+        "bookmarks": 669
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 0,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "1921125128898740229",
+      "text": "Big ole ass is heavy \nShake that shit like jelly 🥞🎂🍯😍 https://t.co/J17qLvXneP",
+      "createdAt": "2025-05-10 08:48:18+00:00",
+      "author": {
+        "username": "PrettyPaidLala6",
+        "name": "Lala 🌺 943-237-9122 📲"
+      },
+      "url": "https://x.com/PrettyPaidLala6/status/1921125128898740229",
+      "engagement": {
+        "likes": 10281,
+        "retweets": 2650,
+        "replies": 30,
+        "views": 575203,
+        "bookmarks": 4067
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/J17qLvXneP"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "entertainment",
+        "tags": [],
+        "alphaScore": 2,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2027096146661998662",
+      "text": "https://t.co/Hfs89ARhd1",
+      "createdAt": "2026-02-26 18:59:17+00:00",
+      "author": {
+        "username": "AlexFinn",
+        "name": "Alex Finn"
+      },
+      "url": "https://x.com/AlexFinn/status/2027096146661998662",
+      "engagement": {
+        "likes": 1321,
+        "retweets": 134,
+        "replies": 107,
+        "views": 283972,
+        "bookmarks": 3037
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2026715487170867235",
+      "text": "Just read this insightful article on using the Kelly Criterion for sizing bets on Polymarket's 5-min Bitcoin up/down markets. \n\nLoved how it breaks down disciplined betting without the emotional rollercoaster! \n\nBest one for me = The formula for prediction markets like this one is: f = (p - m) / (1 - m) where f is the fraction to bet, p your estimated probability, m the market's implied prob. \n\nExample: Market at 51%, you think 55% -> bet ~8% of bankroll.",
+      "createdAt": "2026-02-25 17:46:41+00:00",
+      "author": {
+        "username": "AleiahLock",
+        "name": "Aleiah"
+      },
+      "url": "https://x.com/AleiahLock/status/2026715487170867235",
+      "engagement": {
+        "likes": 153,
+        "retweets": 15,
+        "replies": 14,
+        "views": 19435,
+        "bookmarks": 169
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/2orwqrSDOx"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [
+          "polymarket"
+        ],
+        "alphaScore": 4,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "2026948169926373794",
+      "text": "For those who are trying to build AI arbitrage bots on polymarket\n\nPolymarket launched CLI Tool for AI Agents\n\n''polymarket-cli'' is an official Rust CLI tool from Polymarket for interacting with their prediction markets platform\n\nThey literally gave the perfect playbook on making automated trades\n\nhttps://t.co/HXVwQqLmSH",
+      "createdAt": "2026-02-26 09:11:17+00:00",
+      "author": {
+        "username": "lorden_eth",
+        "name": "Lorden"
+      },
+      "url": "https://x.com/lorden_eth/status/2026948169926373794",
+      "engagement": {
+        "likes": 622,
+        "retweets": 37,
+        "replies": 45,
+        "views": 79794,
+        "bookmarks": 1009
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/hpJIwZ3GCC"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [
+          "polymarket",
+          "bot"
+        ],
+        "alphaScore": 7,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "2026728389621751945",
+      "text": "If you’re serious about building real quantitative edge,  take 45 minutes and watch this most underrated masterpiece for free.\n\nIt’s 100% worth it. Then read my article, turn off your phone and go for a long walk. Most people won’t. https://t.co/MjeeLp0Ip2",
+      "createdAt": "2026-02-25 18:37:57+00:00",
+      "author": {
+        "username": "RohOnChain",
+        "name": "Roan"
+      },
+      "url": "https://x.com/RohOnChain/status/2026728389621751945",
+      "engagement": {
+        "likes": 1103,
+        "retweets": 93,
+        "replies": 24,
+        "views": 140622,
+        "bookmarks": 2265
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/MjeeLp0Ip2"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [],
+        "alphaScore": 8,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "2026704165515198934",
+      "text": "10,000 -> $240,967 in one month using Claude Bot\n\n60% win rate, closed 8000+ trades in profit\n\nasked ClaudeCode, and it clearly explained the strategy here\n\n> Fast-Loop \n> Kelly Criterion \n> Monte Carlo Uncertainty Quantification\n\nyou need to clearly understand simple math and control all risks to get into top 0.1% of traders",
+      "createdAt": "2026-02-25 17:01:42+00:00",
+      "author": {
+        "username": "noisyb0y1",
+        "name": "Noisy"
+      },
+      "url": "https://x.com/noisyb0y1/status/2026704165515198934",
+      "engagement": {
+        "likes": 236,
+        "retweets": 18,
+        "replies": 14,
+        "views": 56304,
+        "bookmarks": 550
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/UrhvN0X277"
+        },
+        {
+          "type": "photo",
+          "url": "https://t.co/UrhvN0X277"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [
+          "claude",
+          "bot"
+        ],
+        "alphaScore": 7,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "2026757796390449382",
+      "text": "https://t.co/fA1UmGvKou",
+      "createdAt": "2026-02-25 20:34:48+00:00",
+      "author": {
+        "username": "1914ad",
+        "name": "Justin Bechler #BIP-110"
+      },
+      "url": "https://x.com/1914ad/status/2026757796390449382",
+      "engagement": {
+        "likes": 11573,
+        "retweets": 2362,
+        "replies": 909,
+        "views": 6126347,
+        "bookmarks": 10985
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 2,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2026608314360988039",
+      "text": "MLX + OpenCode + Qwen3.5-122B-A10B-4bit on M3 Ultra created a great snake game! Work zero-shot.\n\nVideo clearly in super fast mode during generation.\nI generated the prompt using Grok 4.20, it's in the article. https://t.co/I1PliXdHat",
+      "createdAt": "2026-02-25 10:40:49+00:00",
+      "author": {
+        "username": "ivanfioravanti",
+        "name": "Ivan Fioravanti ᯅ"
+      },
+      "url": "https://x.com/ivanfioravanti/status/2026608314360988039",
+      "engagement": {
+        "likes": 397,
+        "retweets": 27,
+        "replies": 15,
+        "views": 73430,
+        "bookmarks": 320
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/I1PliXdHat"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "local_models",
+        "tags": [
+          "local-models"
+        ],
+        "alphaScore": 5,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2026718729707598020",
+      "text": "Do you even understand what this means?\n\nAn open source model just released that is:\n\n• Just as smart as Sonnet 4.5\n• Incredible at coding\n• Can run on almost any modern computer\n\nIf you have 32gb of RAM (most Mac Minis do) you can have unlimited super intelligence on your desk. For free.\n\nSonnet 4.5 was released 5 months ago\n\nIn 5 months that level of intelligence went from frontier to free on your desk\n\nAnd not only that, can run on any laptop with 32gb of RAM\n\nIf you have the memory, do the following immediately:\n\n1. Download LM Studio\n2. Go to your OpenClaw and ask which of these new Qwen models is best for your hardware\n3. Have it walk you through downloading and loading it\n4. Build apps with it knowing you are using your own personal, private super intelligence on your desk\n\nThe people denying this is the future are so beyond lost.",
+      "createdAt": "2026-02-25 17:59:34+00:00",
+      "author": {
+        "username": "AlexFinn",
+        "name": "Alex Finn"
+      },
+      "url": "https://x.com/AlexFinn/status/2026718729707598020",
+      "engagement": {
+        "likes": 5636,
+        "retweets": 473,
+        "replies": 343,
+        "views": 793933,
+        "bookmarks": 7532
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "local_models",
+        "tags": [
+          "openclaw",
+          "local-models",
+          "mac-mini"
+        ],
+        "alphaScore": 8,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2026036464287412412",
+      "text": "how to use obsidian + claude code to build a 24/7 personal operating system and build your startup:\n\n1. write everything in markdown (daily notes, projects, beliefs, people, meetings)\n\n2. link your notes together so they mirror how your brain actually thinks.\n\n3. install obsidian cli so claude code can read your entire vault + the relationships.\n\n4. stop reexplaining projects every session. use reference files instead.\n\n5. build custom slash commands:\n\n/context → load your full life + work state\n/trace → see how an idea evolved over months\n/connect → bridge two domains you’ve been circling\n/ideas → generate startup ideas from your vault\n/graduate → promote daily thoughts into real assets\n\n6. keep a strict rule: human writes the vault. agents read it, suggest, execute.\n\n7. let claude aka clode surface patterns you’ve been unconsciously circling for years.\n\n8. delegate from inside your notes. one sentence in obsidian → agent handles the rest.\n\n9. treat writing as leverage.the more you write, the more context your agents have.\n\n10. understand this:markdown files are the oxygen of llms.\n\ni really enjoyed seeing how to use obsidian thanks to @internetvin \n\nvin uses ai like a thinking partner wired into his life’s work.\n\n99.99% of people won’t do this because it requires reflection + setup.\n\nbut once the vault exists, the agent stops being generic.\nit starts thinking in your voice.\n\nepisode is live on @startupideaspod (more there)\n\nthis one is different. send this tweet to a friend.\n\nim still processing how game changer obsidian + claude code is, maybe you too\n\nwatch",
+      "createdAt": "2026-02-23 20:48:29+00:00",
+      "author": {
+        "username": "gregisenberg",
+        "name": "GREG ISENBERG"
+      },
+      "url": "https://x.com/gregisenberg/status/2026036464287412412",
+      "engagement": {
+        "likes": 6962,
+        "retweets": 777,
+        "replies": 305,
+        "views": 745900,
+        "bookmarks": 14907
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/SjvPomOSbU"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "tools_productivity",
+        "tags": [
+          "claude",
+          "obsidian"
+        ],
+        "alphaScore": 7,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2026300104504676798",
+      "text": "https://t.co/28O4pzyQWd",
+      "createdAt": "2026-02-24 14:16:06+00:00",
+      "author": {
+        "username": "coreyganim",
+        "name": "Corey Ganim"
+      },
+      "url": "https://x.com/coreyganim/status/2026300104504676798",
+      "engagement": {
+        "likes": 3641,
+        "retweets": 389,
+        "replies": 69,
+        "views": 1938983,
+        "bookmarks": 15867
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2026311784421036223",
+      "text": "1/ Some Simple Economics of AGI—🔥🧵\nRight now, there is a low-grade panic running through the economy. Everyone is asking the same anxious question: what exactly is AI going to automate, and what will be left for us? https://t.co/XlIea559zx",
+      "createdAt": "2026-02-24 15:02:31+00:00",
+      "author": {
+        "username": "ccatalini",
+        "name": "Christian Catalini"
+      },
+      "url": "https://x.com/ccatalini/status/2026311784421036223",
+      "engagement": {
+        "likes": 1847,
+        "retweets": 360,
+        "replies": 130,
+        "views": 560179,
+        "bookmarks": 3003
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/XlIea559zx"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "economics_politics",
+        "tags": [],
+        "alphaScore": 4,
+        "alphaType": "research"
+      }
+    },
+    {
+      "id": "2025920521871716562",
+      "text": "https://t.co/DotZ3V6XhJ",
+      "createdAt": "2026-02-23 13:07:46+00:00",
+      "author": {
+        "username": "elvissun",
+        "name": "Elvis"
+      },
+      "url": "https://x.com/elvissun/status/2025920521871716562",
+      "engagement": {
+        "likes": 11430,
+        "retweets": 1501,
+        "replies": 354,
+        "views": 4610542,
+        "bookmarks": 34504
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 3,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2026069441474138525",
+      "text": "He really compressed 4 years of therapy into 60 seconds.￼ https://t.co/cQnYajamvt",
+      "createdAt": "2026-02-23 22:59:32+00:00",
+      "author": {
+        "username": "growthhub_",
+        "name": "Growth Labs"
+      },
+      "url": "https://x.com/growthhub_/status/2026069441474138525",
+      "engagement": {
+        "likes": 23374,
+        "retweets": 4067,
+        "replies": 165,
+        "views": 1330185,
+        "bookmarks": 19767
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/cQnYajamvt"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "entertainment",
+        "tags": [],
+        "alphaScore": 2,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2026273466434162807",
+      "text": "This might be the most INSANE OpenClaw setup I've found.\n\nOpenClaw + Kimi K2.5 + Ollama = $0/month AI agents.\n\nGood enough for 70% of daily tasks.\n\nHere's the 2-minute setup ↓ https://t.co/5eT19HqKcA",
+      "createdAt": "2026-02-24 12:30:15+00:00",
+      "author": {
+        "username": "PrajwalTomar_",
+        "name": "Prajwal Tomar"
+      },
+      "url": "https://x.com/PrajwalTomar_/status/2026273466434162807",
+      "engagement": {
+        "likes": 991,
+        "retweets": 114,
+        "replies": 55,
+        "views": 76839,
+        "bookmarks": 1865
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/5eT19HqKcA"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw",
+          "local-models"
+        ],
+        "alphaScore": 8,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2026019344602288166",
+      "text": "People giving OpenClaw root access to their entire life https://t.co/jqW0FwiW03",
+      "createdAt": "2026-02-23 19:40:28+00:00",
+      "author": {
+        "username": "elonmusk",
+        "name": "Elon Musk"
+      },
+      "url": "https://x.com/elonmusk/status/2026019344602288166",
+      "engagement": {
+        "likes": 397089,
+        "retweets": 24325,
+        "replies": 10547,
+        "views": 63888939,
+        "bookmarks": 22702
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/jqW0FwiW03"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw"
+        ],
+        "alphaScore": 6,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2025120936643678365",
+      "text": "BREAKING: AI can now build financial plans like Goldman Sachs wealth advisors (for free).\n\nHere are 12 insane Claude prompts that replace $5,000/hour financial planners (Save for later) https://t.co/pb3ei8J1UR",
+      "createdAt": "2026-02-21 08:10:30+00:00",
+      "author": {
+        "username": "heynavtoor",
+        "name": "Nav Toor"
+      },
+      "url": "https://x.com/heynavtoor/status/2025120936643678365",
+      "engagement": {
+        "likes": 3033,
+        "retweets": 384,
+        "replies": 58,
+        "views": 744326,
+        "bookmarks": 9481
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/pb3ei8J1UR"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "claude"
+        ],
+        "alphaScore": 9,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2024870225301090667",
+      "text": "You can make $600K.\n\nWith a bot that earns $83 every hour, 24/7, no days off, 365 days straight.\n\nBy buying both sides of the same match on Polymarket and locking profit before the game even starts.\n\n> The bot buys YES and NO simultaneously on sports markets.\n> When combined price is below $1 - profit is locked instantly.\n> 7,877 trades.\n> $619K in 12 months.\n\nCheck the wallet here: https://t.co/YJSN7x7DN1\n\nI reverse-engineered every trade and rebuilt the full logic in Claude Opus 4.6.\n\nThe strategy, the math, both arb types, the exact 5-step bot architecture - all in the article.\n\nFeed it to your OpenClaw, let it spec the bot for Claude Opus 4.6, and you are set.",
+      "createdAt": "2026-02-20 15:34:16+00:00",
+      "author": {
+        "username": "xmayeth",
+        "name": "may.crypto {🦅}"
+      },
+      "url": "https://x.com/xmayeth/status/2024870225301090667",
+      "engagement": {
+        "likes": 3103,
+        "retweets": 208,
+        "replies": 155,
+        "views": 984091,
+        "bookmarks": 6881
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/1m2tiS1NZX"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [
+          "polymarket",
+          "openclaw",
+          "claude",
+          "bot"
+        ],
+        "alphaScore": 9,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "2024445857744171509",
+      "text": "How to Turn $15k into $529k in 15 Days\n\nA Clawdbot scaled a deposit up to $529k\n\nBy trading 5-min and 15-min markets on Polymarket\n\n> the bot buys YES and NO simultaneously\n> If their combined price is below $1, making 4% profit instantly\n\n> 9,866 trades\n> 83.9% win rate\n> +$529k profit\n\nCheck this profile here: https://t.co/YOKBDwf91f\n\nIf you wish to do the same\n\nI have outlined exactly how to create your own bot in my article\n\nWhich is also where I told the story of an account making $101k in 48 hours",
+      "createdAt": "2026-02-19 11:27:59+00:00",
+      "author": {
+        "username": "0xDPool",
+        "name": "DPool"
+      },
+      "url": "https://x.com/0xDPool/status/2024445857744171509",
+      "engagement": {
+        "likes": 1968,
+        "retweets": 178,
+        "replies": 88,
+        "views": 612219,
+        "bookmarks": 3437
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/5GApv7Tl1g"
+        },
+        {
+          "type": "video",
+          "url": "https://t.co/5GApv7Tl1g"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "quant_trading",
+        "tags": [
+          "polymarket",
+          "bot"
+        ],
+        "alphaScore": 9,
+        "alphaType": "strategy"
+      }
+    },
+    {
+      "id": "2023728978561765574",
+      "text": "https://t.co/w49fRf9JvL",
+      "createdAt": "2026-02-17 11:59:22+00:00",
+      "author": {
+        "username": "0xDPool",
+        "name": "DPool"
+      },
+      "url": "https://x.com/0xDPool/status/2023728978561765574",
+      "engagement": {
+        "likes": 1809,
+        "retweets": 221,
+        "replies": 52,
+        "views": 823106,
+        "bookmarks": 3294
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2024572078314451146",
+      "text": "Most give their OpenClaw tasks.\n\nAlmost nobody asks theirs the real questions that make it smarter. \n\nYour agent understands your context, patterns, blind spots, and workflows. \n\nIt’s sitting on insights about YOU that it will never ever surface unless you ask.\n\nThese 21 prompts force OpenClaw to self-improve, catch its own gaps, and build what you didn’t know you needed:\n\n1. From everything you know about me and my workflows so far, what tools or automations am I missing that would measurably improve how I operate?\n\n2. What assumptions do you currently hold about me, my priorities, or my preferences that could be wrong and that we should vet and correct right now?\n\n3. Based on all my decision patterns and asks you’ve experienced, what am I likely to need next week or in the future that you can get ahead of and systemize?\n\n4. What skills or capabilities should you be developing and adding to our repertoire right now based on where my projects are heading and everything you know about me?\n\n5. What context about my vision, voice, or priorities are you losing between sessions from compactions that needs clear fixes so you stop getting dumber over time?\n\n6. What connections between my projects, ideas, or goals do you see that I likely haven’t made yet, and what should we build or adjust based on those connections?\n\n7. What recurring friction points have you observed in how I work that you could eliminate by building a new workflow, template, or automation without me having to ask?\n\n8. From every correction, redirect, and piece of feedback I’ve given you, what rules should you be writing into your own identity and skill files right now so you never repeat those mistakes?\n\n9. If you audited every action you’ve taken for me in the last week, which ones actually moved my goals forward and which were wasted motion we should cut permanently?\n\n10. Where are you defaulting to generic output when you have enough context on me to be building something specific, tailored, and actually useful?\n\n11. What’s one system you could build for yourself right now that would compound in value and make every future task you do for me faster or sharper?\n\n12. What errors or missed opportunities have you repeated more than once, and what self-check or guardrail can we build together so they never happen again?\n\n13. Based on everything you know about where my ecosystem is going, what should you be researching, learning, or prototyping right now without me telling you to?\n\n14. Where are you filling gaps in your knowledge about me or my projects with assumptions instead of flagging them so we can lock in the real answers?\n\n15. What’s the most valuable data, insight, or pattern buried in your memory and context files that you’re sitting on and underutilizing for my benefit?\n\n16.If you scored yourself 1-10 on how accurately you model my priorities, goals, and how I think, what’s the number, what’s dragging it down, and what specific fixes bring it up?\n\n17.What external data sources, feeds, or signals should you be pulling or can I provide so you can operate on a regular cadence that would make every decision you make about my projects sharper?\n\n18.If a brand new agent replaced you tomorrow with only my documentation, what critical things would it get wrong that you’ve learned through working with me, and how do we capture that knowledge permanently in systems?\n\n19.What workflows am I still doing manually or inefficiently that you already have enough context to fully automate or streamline if I gave you the green light?\n\n20.Based on how my thinking and priorities have evolved since we started working together, what parts of your current approach are outdated and need to be rebuilt?\n\n21.What’s the single highest leverage thing you could do in the next 24 hours that I haven’t asked for but would meaningfully accelerate where I’m trying to go?\n\nSave these and use them to help you.",
+      "createdAt": "2026-02-19 19:49:32+00:00",
+      "author": {
+        "username": "kloss_xyz",
+        "name": "klöss"
+      },
+      "url": "https://x.com/kloss_xyz/status/2024572078314451146",
+      "engagement": {
+        "likes": 1099,
+        "retweets": 94,
+        "replies": 59,
+        "views": 146385,
+        "bookmarks": 3107
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/LJ35bEXkA9"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw"
+        ],
+        "alphaScore": 7,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2024542359611134253",
+      "text": "https://t.co/nSEqYtW4Rf",
+      "createdAt": "2026-02-19 17:51:27+00:00",
+      "author": {
+        "username": "chamath",
+        "name": "Chamath Palihapitiya"
+      },
+      "url": "https://x.com/chamath/status/2024542359611134253",
+      "engagement": {
+        "likes": 1561,
+        "retweets": 175,
+        "replies": 114,
+        "views": 401512,
+        "bookmarks": 3431
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2024585669306171888",
+      "text": "This is a picture from two of the people using FLGR-242 (Recombinant Follistatin) for the last 16 weeks.\n\n@trevorkruder the CEO of Alpha Bio Med Labs & Paramount Peptides and Me from yesterday morning in Costa Mesa post training.\n\nBoth of us are up 10+ pounds of pure skeletal muscle and 6% Body fat or lower.\n\nTrevor is 46 and 252 pounds and I AM 54 and 219 pounds. (I turn 55 Tuesday Feb 24th)\n\nBoth of us have been dosing *ONLY* 2.5mg per week for 12 weeks and 5mg for the last 4 weeks.\n\nPlease understand neither of us is *DIETING*.\n\nWe are eating whatever we want whenever we want.\n\nBoth of us are the biggest and leanest we have ever been in our entire lives.\n\nFLGR-242 is THE Holy Grail Agent for Modulating Body Composition to more muscle and less fat.\n\nThis product is a miracle molecule and will definitely change the world for biohackers, body builders, performance enhancement enthusiasts and most of all, GLP-1 peptide users who suffer from muscle loss because their lifestyle is *not optimal*.\n\nAvailable ONLY from BioLongevity Labs, Alpha Bio Med Labs and Paramount Peptides.\n\nBioLongevity Labs expects to be restocked with FLGR-242 next week!\n\nGet on the Waiting List Now:\nhttps://t.co/CzInfyC4pL",
+      "createdAt": "2026-02-19 20:43:33+00:00",
+      "author": {
+        "username": "JayCampbell333",
+        "name": "Jay Campbell"
+      },
+      "url": "https://x.com/JayCampbell333/status/2024585669306171888",
+      "engagement": {
+        "likes": 446,
+        "retweets": 25,
+        "replies": 60,
+        "views": 54480,
+        "bookmarks": 856
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/VH0GfjYlGi"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "health_peptides",
+        "tags": [
+          "peptides",
+          "bot"
+        ],
+        "alphaScore": 6,
+        "alphaType": "research"
+      }
+    },
+    {
+      "id": "2024488264808165543",
+      "text": "This is the smartest counter I’ve seen to ai taking over jobs, in the short term.  \n\nIs the ((aggregate tokens cost to do what an employee does + plus fully encumbered developer and maintenance costs ) / (fully encumbered employee cost ) )<= productivity ?\n\nIf it takes 8 Claude agents, at $300 for tokens, per day, plus $200 per day in dev/maint , to do what an employee does per day, at a fully encumbered cost of $1200.  \n\nThat’s 2600/1200.  But then you need to factor in the productivity rate. \n\nIs it more than 2.16 x productive ? Are there qualitative issues like morale, morality, whatever , that can’t be quantified, that need to go into the decision?\n\nWhat is the going forward progression of burdened costs for the tokens ?\n\nCurious what people think about this ?",
+      "createdAt": "2026-02-19 14:16:30+00:00",
+      "author": {
+        "username": "mcuban",
+        "name": "Mark Cuban"
+      },
+      "url": "https://x.com/mcuban/status/2024488264808165543",
+      "engagement": {
+        "likes": 5771,
+        "retweets": 425,
+        "replies": 870,
+        "views": 2253488,
+        "bookmarks": 4750
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "economics_politics",
+        "tags": [
+          "claude"
+        ],
+        "alphaScore": 5,
+        "alphaType": "research"
+      }
+    },
+    {
+      "id": "2024052840562372830",
+      "text": "ElevenLabs just lost its moat 🤯\n\nSomeone just dropped Voicebox, and it clones any voice from just a 3-second audio clip, running 100% locally on your machine.\n\n100% Open Source https://t.co/bPldsB7eeU",
+      "createdAt": "2026-02-18 09:26:16+00:00",
+      "author": {
+        "username": "oliviscusAI",
+        "name": "Oliver Prompts"
+      },
+      "url": "https://x.com/oliviscusAI/status/2024052840562372830",
+      "engagement": {
+        "likes": 9639,
+        "retweets": 905,
+        "replies": 241,
+        "views": 787097,
+        "bookmarks": 13393
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/bPldsB7eeU"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "tools_productivity",
+        "tags": [],
+        "alphaScore": 6,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2024518232271417434",
+      "text": "https://t.co/jmQWygzJ6h",
+      "createdAt": "2026-02-19 16:15:34+00:00",
+      "author": {
+        "username": "AndrewWarner",
+        "name": "Andrew Warner"
+      },
+      "url": "https://x.com/AndrewWarner/status/2024518232271417434",
+      "engagement": {
+        "likes": 2514,
+        "retweets": 227,
+        "replies": 126,
+        "views": 1821858,
+        "bookmarks": 7517
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2024324617490616397",
+      "text": "https://t.co/MIQPmRRA01",
+      "createdAt": "2026-02-19 03:26:13+00:00",
+      "author": {
+        "username": "PeterDiamandis",
+        "name": "Peter H. Diamandis, MD"
+      },
+      "url": "https://x.com/PeterDiamandis/status/2024324617490616397",
+      "engagement": {
+        "likes": 1109,
+        "retweets": 183,
+        "replies": 74,
+        "views": 162707,
+        "bookmarks": 1549
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2024196080938713439",
+      "text": "for all of you guys that are trying to figure out how to get the most out of OpenClaw\n\nyou're welcome\n\nand here are all of the files:\n\nIDENTITY:\nhttps://t.co/jmF8E9fFrZ\n\nSOUL: https://t.co/YpIKrnwnVQ\n\nPRD:\nhttps://t.co/sytI1Nh56i",
+      "createdAt": "2026-02-18 18:55:28+00:00",
+      "author": {
+        "username": "Nate_Google_",
+        "name": "Nate.Google"
+      },
+      "url": "https://x.com/Nate_Google_/status/2024196080938713439",
+      "engagement": {
+        "likes": 2072,
+        "retweets": 169,
+        "replies": 43,
+        "views": 388554,
+        "bookmarks": 6359
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw"
+        ],
+        "alphaScore": 8,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2024170000181817764",
+      "text": "Whenever I see a tweet like this I just send the link to my @openclaw and tell her \"analyze this tweet and build an implementation plan for us to do exactly what it says\" \n\nand it just does it",
+      "createdAt": "2026-02-18 17:11:49+00:00",
+      "author": {
+        "username": "coreyganim",
+        "name": "Corey Ganim"
+      },
+      "url": "https://x.com/coreyganim/status/2024170000181817764",
+      "engagement": {
+        "likes": 1474,
+        "retweets": 79,
+        "replies": 105,
+        "views": 363522,
+        "bookmarks": 2987
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw"
+        ],
+        "alphaScore": 7,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2024029392465264812",
+      "text": "MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST MUST READ",
+      "createdAt": "2026-02-18 07:53:06+00:00",
+      "author": {
+        "username": "original_ngv",
+        "name": "enji vi"
+      },
+      "url": "https://x.com/original_ngv/status/2024029392465264812",
+      "engagement": {
+        "likes": 3926,
+        "retweets": 345,
+        "replies": 34,
+        "views": 955527,
+        "bookmarks": 8037
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2023957499183829467",
+      "text": "https://t.co/XmYSO3mC8f",
+      "createdAt": "2026-02-18 03:07:25+00:00",
+      "author": {
+        "username": "arscontexta",
+        "name": "Heinrich"
+      },
+      "url": "https://x.com/arscontexta/status/2023957499183829467",
+      "engagement": {
+        "likes": 6964,
+        "retweets": 719,
+        "replies": 174,
+        "views": 2402814,
+        "bookmarks": 18792
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 2,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2023843493765157235",
+      "text": "I've spent 2.54 BILLION tokens perfecting OpenClaw.\n\nThe use cases I discovered have changed the way I live and work.\n\n...and now I'm sharing them with the world.\n\nHere are 21 use cases I use daily:\n\n0:00 Intro\n0:50 What is OpenClaw?\n1:35 MD Files\n2:14 Memory System\n3:55 CRM System\n7:19 Fathom Pipeline\n9:18 Meeting to Action Items\n10:46 Knowledge Base System\n13:51 X Ingestion Pipeline\n14:31 Business Advisory Council\n16:13 Security Council\n18:21 Social Media Tracking\n19:18 Video Idea Pipeline\n21:40 Daily Briefing Flow\n22:23 Three Councils\n22:57 Automation Schedule\n24:15 Security Layers\n26:09 Databases and Backups\n28:00 Video/Image Gen\n29:14 Self Updates\n29:56 Usage & Cost Tracking\n30:15 Prompt Engineering\n31:15 Developer Infrastructure\n32:06 Food Journal",
+      "createdAt": "2026-02-17 19:34:24+00:00",
+      "author": {
+        "username": "MatthewBerman",
+        "name": "Matthew Berman"
+      },
+      "url": "https://x.com/MatthewBerman/status/2023843493765157235",
+      "engagement": {
+        "likes": 13856,
+        "retweets": 1623,
+        "replies": 423,
+        "views": 3245089,
+        "bookmarks": 40835
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/S5nDWEHUuk"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw"
+        ],
+        "alphaScore": 6,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2023911336808485240",
+      "text": "for folks who keep asking, here's how to setup @openclaw on AWS for $20 a month.... quickly",
+      "createdAt": "2026-02-18 00:03:59+00:00",
+      "author": {
+        "username": "Jason",
+        "name": "@jason"
+      },
+      "url": "https://x.com/Jason/status/2023911336808485240",
+      "engagement": {
+        "likes": 4231,
+        "retweets": 325,
+        "replies": 165,
+        "views": 1033675,
+        "bookmarks": 10816
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw"
+        ],
+        "alphaScore": 8,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2023776478446436696",
+      "text": "https://t.co/8FoiiD4X67",
+      "createdAt": "2026-02-17 15:08:07+00:00",
+      "author": {
+        "username": "oliverhenry",
+        "name": "Oliver Henry"
+      },
+      "url": "https://x.com/oliverhenry/status/2023776478446436696",
+      "engagement": {
+        "likes": 2635,
+        "retweets": 201,
+        "replies": 131,
+        "views": 1219040,
+        "bookmarks": 10132
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 2,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2023421221744877903",
+      "text": "https://t.co/zFf6OgdaHX",
+      "createdAt": "2026-02-16 15:36:27+00:00",
+      "author": {
+        "username": "jordymaui",
+        "name": "jordy"
+      },
+      "url": "https://x.com/jordymaui/status/2023421221744877903",
+      "engagement": {
+        "likes": 8272,
+        "retweets": 758,
+        "replies": 407,
+        "views": 3301552,
+        "bookmarks": 33355
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 2,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2023033303062782191",
+      "text": "5 acres. Two humanoids. 3D printer. Starlink. Solar roof. A few GPUs running a local AGI. \nSecurity drones, chickens roam, fruit trees heavy with harvest. Kids run barefoot past potato rows, as robots fix the fence.\nCivilization optional. Family of 4 on the techno homestead. https://t.co/3lf9cJVBrT",
+      "createdAt": "2026-02-15 13:55:00+00:00",
+      "author": {
+        "username": "Bunagayafrost",
+        "name": "Bunagaya"
+      },
+      "url": "https://x.com/Bunagayafrost/status/2023033303062782191",
+      "engagement": {
+        "likes": 5930,
+        "retweets": 575,
+        "replies": 354,
+        "views": 616589,
+        "bookmarks": 2219
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/3lf9cJVBrT"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "local_models",
+        "tags": [
+          "bot"
+        ],
+        "alphaScore": 7,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2023439732328525890",
+      "text": "I've used OpenClaw for over 210 hours the last month\n\nMore than anyone on Earth\n\nIn this video I go over EVERY single lesson I've learned about OpenClaw.\n\nFrom set up, to use cases, to why VPSs suck, to security. Everything\n\nThe only OpenClaw video you'll ever need is here: https://t.co/JU8v10L4S6",
+      "createdAt": "2026-02-16 16:50:00+00:00",
+      "author": {
+        "username": "AlexFinn",
+        "name": "Alex Finn"
+      },
+      "url": "https://x.com/AlexFinn/status/2023439732328525890",
+      "engagement": {
+        "likes": 5938,
+        "retweets": 670,
+        "replies": 368,
+        "views": 567764,
+        "bookmarks": 13299
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/JU8v10L4S6"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw"
+        ],
+        "alphaScore": 7,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2023412348120072590",
+      "text": "https://t.co/1VVs3S2rBO",
+      "createdAt": "2026-02-16 15:01:11+00:00",
+      "author": {
+        "username": "PeterDiamandis",
+        "name": "Peter H. Diamandis, MD"
+      },
+      "url": "https://x.com/PeterDiamandis/status/2023412348120072590",
+      "engagement": {
+        "likes": 1128,
+        "retweets": 223,
+        "replies": 95,
+        "views": 307947,
+        "bookmarks": 1611
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2023072640404267050",
+      "text": "ok..Claude + Local SEO is going to quietly create a bunch of business “blue collar millionaires” this year.\n\nThis feels exactly like when people figured out Facebook ads in 2016-2017.\n\nAverage businesses were beating better businesses… just because they understood distribution first.\n\nWe’re in that same window again.\n\nBut this time, your alpha isn’t ad spend.\n\nIt’s how fast you can publish helpful local pages + optimize your Google Business Profile before your competitors even wake up.\n\nThe stack to win local search didn’t look like this 12 months ago, but now it’s here:\n\n→ Claude (or ChatGPT): $20-30/month\n→ Google Business Profile: Free\n→ A basic website (WordPress/Shopify/Webflow): low cost\n→ Canva/CapCut for simple visuals: Free\n→ Google Search Console + Analytics: Free\n\nTotal cost to start: Under $100/month. And people used to pay agencies $1k–$3k/month just to move slowly.\n\nHere’s how to use it:\n\nStep 1: Find your local keywords with Claude\n\nYou don’t need to guess anymore.\n\nGive Claude your services + your city/areas. Ask it to list:\n\n- A “service + location” keywords\n- “near me” intent keywords\n- emergency keywords\n- comparison keywords (best, affordable, etc.)\n\nStep 2: Build service area pages (fast)\n\nTell Claude your exact offer, prices, process, and service areas.\n\nAsk it to draft pages for each area you serve (one page per area).\n\nThen you add the real stuff: photos, reviews, FAQs, and a call button.\n\nStep 3: Turn your Google Business Profile into a lead machine\n\nAsk Claude to write:\n\n- GBP description\n- services list (with short blurbs)\n- 20 FAQs + answers\n- weekly Google Post ideas (offers, tips, before/after)\n\nStep 4: Create “proof” content that ranks\n\nClaude can turn one job into 10 pieces of content:\n\n- a short case study page (“AC repair in Bandra: fixed in 45 mins”)\n- a Google Post\n- a simple Reel script\n- a FAQ update\n\nStep 5: Get reviews + replies done in minutes\n\nAsk Claude to write 3 review request texts and a review reply template.\n\nThen do the only part AI can’t: actually ask customers.\n\nThis isn’t magic.\n\nIt’s the same local SEO fundamentals… but now you can execute 10x faster.\n\nAnd the businesses that publish first will collect the calls.",
+      "createdAt": "2026-02-15 16:31:19+00:00",
+      "author": {
+        "username": "bloggersarvesh",
+        "name": "Sarvesh Shrivastava"
+      },
+      "url": "https://x.com/bloggersarvesh/status/2023072640404267050",
+      "engagement": {
+        "likes": 1470,
+        "retweets": 89,
+        "replies": 18,
+        "views": 449440,
+        "bookmarks": 3902
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "tools_productivity",
+        "tags": [
+          "claude"
+        ],
+        "alphaScore": 7,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2022663312853598425",
+      "text": "BREAKING: Claude can now do SEO like a $10,000/month agency (for free).\n\nHere are 7 insane Claude Cowork prompts that can take your biz to $100k/month : (Save for later) https://t.co/534m2puIlY",
+      "createdAt": "2026-02-14 13:24:47+00:00",
+      "author": {
+        "username": "bloggersarvesh",
+        "name": "Sarvesh Shrivastava"
+      },
+      "url": "https://x.com/bloggersarvesh/status/2022663312853598425",
+      "engagement": {
+        "likes": 8360,
+        "retweets": 769,
+        "replies": 165,
+        "views": 5305113,
+        "bookmarks": 32875
+      },
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://t.co/534m2puIlY"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "claude"
+        ],
+        "alphaScore": 8,
+        "alphaType": "tool"
+      }
+    },
+    {
+      "id": "2023330244774523079",
+      "text": "Many people think of politics as a pendulum. When you point to unprecedented events, they'll respond: no need to worry, the pendulum will swing, and it'll all come back to a stable equilibrium. It's always worked out, and somehow always will.\n\nAnd that's true for many places, much of the time.\n\nBut sometimes a political situation isn't a pendulum. Sometimes it's best modeled by Galloping Gertie, the former Tacoma Narrows Bridge. You see, that bridge started swinging from left, to right, and then further to the left, and even farther to the right, until it broke into pieces and completely fell apart.\n\nThat's what happened to China, Germany, and Korea in the 20th century. They shattered into left and right pieces: North Korea and South Korea, East Germany and West Germany, PRC and ROC.\n\nAnd that was just a two-state equilibrium. But Yugoslavia broken into seven nations. The Soviets split into 15 countries. French decolonization gave rise to more than two dozen states, and the sunset of the British Empire created 50+ sovereigns.\n\nNow, in some sense, those were eventually stable political equilibria. Just like the pieces of the Tacoma Narrow Bridge did stop swinging. But they stopped after breaking apart, not after coming together.",
+      "createdAt": "2026-02-16 09:34:56+00:00",
+      "author": {
+        "username": "balajis",
+        "name": "Balaji"
+      },
+      "url": "https://x.com/balajis/status/2023330244774523079",
+      "engagement": {
+        "likes": 897,
+        "retweets": 73,
+        "replies": 109,
+        "views": 114435,
+        "bookmarks": 177
+      },
+      "media": [
+        {
+          "type": "video",
+          "url": "https://t.co/92SrLSyPUK"
+        }
+      ],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "economics_politics",
+        "tags": [],
+        "alphaScore": 2,
+        "alphaType": "research"
+      }
+    },
+    {
+      "id": "2023140715652579652",
+      "text": "https://t.co/Sqmy4LMvGl",
+      "createdAt": "2026-02-15 21:01:49+00:00",
+      "author": {
+        "username": "AlexFinn",
+        "name": "Alex Finn"
+      },
+      "url": "https://x.com/AlexFinn/status/2023140715652579652",
+      "engagement": {
+        "likes": 3467,
+        "retweets": 461,
+        "replies": 320,
+        "views": 740093,
+        "bookmarks": 8497
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "uncategorized",
+        "tags": [],
+        "alphaScore": 1,
+        "alphaType": "noise"
+      }
+    },
+    {
+      "id": "2023105991147913660",
+      "text": "after a week upgrading and tweaking my @openclaw, here's what changed.\n\nthis article I wrote is still the best starting point, I used it myself to set mine up. \nit gives you a step by step guide for a safe, locked-down openclaw. minimum risk.\n\nbut if you want a useful one, you need to go further. \n\nhere's what I did:\n\n1/ switched to GLM-5 via @Zai_org yearly pro plan ($250/yr). benchmarks comparable to Opus 4.5. \nthey give you an API key that plugs straight into openclaw. flat cost, no token monitoring.\n\n2/ installed Claude Code + Happy Coder: you can code on your Mac Mini from your phone. \nSeparate from OpenClaw but part of the overall setup.\n\n3/ it builds tools and projects overnight based on our conversations, then presents them in my 7am morning briefing on Telegram\n\n4/ it's accumulating a knowledge library from every research session. the more it knows, the better the next session gets. it remembers everything.\n\nI genuinely see my bot getting sharper every day. it's starting to understand what I actually want before I ask.\n\nbiggest lesson from this week: I learned more by actually setting this up and breaking things than from all the X articles I read before starting.\n\nif you think you don't have the technical knowledge to run one, you're wrong. I didn't either.\n\njust start.",
+      "createdAt": "2026-02-15 18:43:50+00:00",
+      "author": {
+        "username": "witcheer",
+        "name": "witcheer ☯︎"
+      },
+      "url": "https://x.com/witcheer/status/2023105991147913660",
+      "engagement": {
+        "likes": 749,
+        "retweets": 33,
+        "replies": 31,
+        "views": 136768,
+        "bookmarks": 1731
+      },
+      "media": [],
+      "_meta": {
+        "firstSeenAt": "2026-02-28T22:03:26.420244+00:00",
+        "processedAt": "2026-02-28T22:04:44.301212+00:00",
+        "category": "ai_agents",
+        "tags": [
+          "openclaw",
+          "claude",
+          "mac-mini",
+          "bot"
+        ],
+        "alphaScore": 7,
+        "alphaType": "tool"
+      }
+    }
+  ]
+}

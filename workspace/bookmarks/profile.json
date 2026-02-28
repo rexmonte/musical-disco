@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-02-28T22:04:44.301212+00:00",
+  "totalBookmarks": 50,
+  "categories": {
+    "uncategorized": {
+      "count": 16,
+      "pct": 32.0,
+      "trend": "new",
+      "keyAuthors": [
+        "matteopelleg",
+        "tulipking",
+        "AlexFinn",
+        "1914ad",
+        "coreyganim"
+      ],
+      "keyTerms": []
+    },
+    "ai_agents": {
+      "count": 11,
+      "pct": 22.0,
+      "trend": "new",
+      "keyAuthors": [
+        "AlexFinn",
+        "coreyganim",
+        "PrajwalTomar_",
+        "elonmusk",
+        "heynavtoor"
+      ],
+      "keyTerms": [
+        "openclaw",
+        "claude code",
+        "agent",
+        "launchagent",
+        "sub-agent"
+      ]
+    },
+    "quant_trading": {
+      "count": 8,
+      "pct": 16.0,
+      "trend": "new",
+      "keyAuthors": [
+        "Argona0x",
+        "0xMovez",
+        "AleiahLock",
+        "lorden_eth",
+        "RohOnChain"
+      ],
+      "keyTerms": [
+        "polymarket",
+        "kelly criterion",
+        "arbitrage",
+        "arb",
+        "quant"
+      ]
+    },
+    "tools_productivity": {
+      "count": 4,
+      "pct": 8.0,
+      "trend": "new",
+      "keyAuthors": [
+        "obsdmd",
+        "gregisenberg",
+        "oliviscusAI",
+        "bloggersarvesh"
+      ],
+      "keyTerms": [
+        "obsidian",
+        "cli",
+        "seo",
+        "workflow",
+        "productivity"
+      ]
+    },
+    "health_peptides": {
+      "count": 3,
+      "pct": 6.0,
+      "trend": "new",
+      "keyAuthors": [
+        "drmarlonperalta",
+        "DrCamRx",
+        "JayCampbell333"
+      ],
+      "keyTerms": [
+        "peptide",
+        "bpc-157",
+        "ghk-cu",
+        "follistatin",
+        "semaglutide"
+      ]
+    },
+    "local_models": {
+      "count": 3,
+      "pct": 6.0,
+      "trend": "new",
+      "keyAuthors": [
+        "AlexFinn",
+        "ivanfioravanti",
+        "Bunagayafrost"
+      ],
+      "keyTerms": [
+        "ollama",
+        "mlx",
+        "qwen",
+        "local.*model",
+        "open source.*model"
+      ]
+    },
+    "economics_politics": {
+      "count": 3,
+      "pct": 6.0,
+      "trend": "new",
+      "keyAuthors": [
+        "ccatalini",
+        "mcuban",
+        "balajis"
+      ],
+      "keyTerms": [
+        "economics",
+        "agi.*economy",
+        "jobs.*ai",
+        "ai.*jobs",
+        "pendulum"
+      ]
+    },
+    "entertainment": {
+      "count": 2,
+      "pct": 4.0,
+      "trend": "new",
+      "keyAuthors": [
+        "PrettyPaidLala6",
+        "growthhub_"
+      ],
+      "keyTerms": [
+        "jelly",
+        "shake",
+        "therapy",
+        "cocktail"
+      ]
+    }
+  },
+  "topAuthors": [
+    {
+      "username": "AlexFinn",
+      "count": 4,
+      "categories": [
+        "uncategorized",
+        "local_models",
+        "ai_agents"
+      ]
+    },
+    {
+      "username": "coreyganim",
+      "count": 2,
+      "categories": [
+        "uncategorized",
+        "ai_agents"
+      ]
+    },
+    {
+      "username": "0xDPool",
+      "count": 2,
+      "categories": [
+        "uncategorized",
+        "quant_trading"
+      ]
+    },
+    {
+      "username": "PeterDiamandis",
+      "count": 2,
+      "categories": [
+        "uncategorized"
+      ]
+    },
+    {
+      "username": "bloggersarvesh",
+      "count": 2,
+      "categories": [
+        "ai_agents",
+        "tools_productivity"
+      ]
+    },
+    {
+      "username": "drmarlonperalta",
+      "count": 1,
+      "categories": [
+        "health_peptides"
+      ]
+    },
+    {
+      "username": "Argona0x",
+      "count": 1,
+      "categories": [
+        "quant_trading"
+      ]
+    },
+    {
+      "username": "DrCamRx",
+      "count": 1,
+      "categories": [
+        "health_peptides"
+      ]
+    },
+    {
+      "username": "matteopelleg",
+      "count": 1,
+      "categories": [
+        "uncategorized"
+      ]
+    },
+    {
+      "username": "obsdmd",
+      "count": 1,
+      "categories": [
+        "tools_productivity"
+      ]
+    }
+  ],
+  "signals": {
+    "primaryInterest": "ai_agents",
+    "emergingInterest": "quant_trading",
+    "bookmarkVelocity": "~50/day (initial seed)"
+  }
+}
