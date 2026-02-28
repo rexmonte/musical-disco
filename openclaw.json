@@ -147,12 +147,12 @@
       "anthropic": {
         "baseUrl": "https://api.anthropic.com/v1",
         "apiKey": "${ANTHROPIC_API_KEY}",
-        "api": "anthropic",
+        "api": "anthropic-messages",
         "models": [
           {
             "id": "anthropic/claude-sonnet-4-20250514",
             "name": "Claude Sonnet 4",
-            "api": "anthropic",
+            "api": "anthropic-messages",
             "reasoning": false,
             "input": [
               "text",
@@ -170,7 +170,7 @@
           {
             "id": "anthropic/claude-haiku",
             "name": "Claude Haiku 3.5",
-            "api": "anthropic",
+            "api": "anthropic-messages",
             "reasoning": false,
             "input": [
               "text",
@@ -215,9 +215,7 @@
             "reasoning": true,
             "input": [
               "text",
-              "image",
-              "audio",
-              "video"
+              "image"
             ],
             "cost": {
               "input": 0.00125,
@@ -310,28 +308,6 @@
       }
     ]
   },
-  "failover": {
-    "policy": "sequential",
-    "maxRetries": 2,
-    "retryDelayMs": 1000,
-    "retryBackoff": "exponential",
-    "cooldown": {
-      "enabled": true,
-      "thresholdErrors": 3,
-      "durationMs": 300000,
-      "resetAfterMs": 900000
-    },
-    "healthCheck": {
-      "enabled": true,
-      "intervalMs": 60000,
-      "timeoutMs": 5000
-    },
-    "rateLimitHandling": {
-      "respectRetryAfter": true,
-      "defaultBackoffMs": 10000,
-      "maxBackoffMs": 120000
-    }
-  },
   "commands": {
     "native": "auto",
     "nativeSkills": "auto",
@@ -377,7 +353,6 @@
   "gateway": {
     "port": 18789,
     "mode": "local",
-    "bind": "127.0.0.1",
     "auth": {
       "mode": "token",
       "token": "${claw-scott-2026}"
