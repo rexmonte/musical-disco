@@ -74,12 +74,12 @@
               "cacheRead": 0,
               "cacheWrite": 0
             },
-            "contextWindow": 32768,
+            "contextWindow": 49152,
             "maxTokens": 8192
           },
           {
             "id": "ollama/qwen3.5-m4-optimized",
-            "name": "Qwen3.5 35B 8K (local)",
+            "name": "Qwen3.5 35B (48K local)",
             "api": "ollama",
             "reasoning": false,
             "input": [
@@ -92,7 +92,7 @@
               "cacheRead": 0,
               "cacheWrite": 0
             },
-            "contextWindow": 32768,
+            "contextWindow": 49152,
             "maxTokens": 8192
           }
         ]
@@ -228,13 +228,13 @@
           "alias": "Gemini Pro"
         },
         "ollama/qwen3.5-m4-optimized": {
-          "alias": "Qwen3.5 35B (32K)"
+          "alias": "Qwen3.5 35B (48K)"
         },
         "ollama/qwen3.5:27b": {
           "alias": "Qwen3.5 27B"
         }
       },
-      "bootstrapTotalMaxChars": 8000,
+      "bootstrapTotalMaxChars": 16000,
       "workspace": "~/.openclaw/workspace",
       "envelopeTimezone": "local",
       "humanDelay": {
@@ -255,6 +255,13 @@
       "sandbox": {
         "mode": "off",
         "scope": "agent"
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "maxHistoryShare": 0.4,
+        "keepRecentTokens": 4096,
+        "reserveTokens": 4096,
+        "reserveTokensFloor": 6144
       }
     },
     "list": [
