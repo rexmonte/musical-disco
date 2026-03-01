@@ -247,6 +247,7 @@ class MarketLoop:
         self.order_mgr = order_mgr
         self.size_usd = size_usd
         self.token_yes = market["token_yes"]
+        self.token_no = market["token_no"]
         self.cycles = 0
 
     async def run_cycle(self) -> None:
@@ -281,8 +282,9 @@ class MarketLoop:
                 )
             else:
                 logger.info(f"[{question_short}] No quote (inventory limit or VPIN)")
-            # Cancel existing orders
+            # Cancel existing orders on both tokens
             self.order_mgr.cancel_market_orders(token)
+            self.order_mgr.cancel_market_orders(self.token_no)
             return
 
         logger.info(
@@ -292,10 +294,11 @@ class MarketLoop:
             f"spread={quote.spread:.3f} inv=${inv:.1f}"
         )
 
-        # Cancel stale orders before requoting
+        # Cancel stale orders before requoting (both YES and NO tokens)
         self.order_mgr.cancel_market_orders(token)
+        self.order_mgr.cancel_market_orders(self.token_no)
 
-        # Place new bid and ask (post-only)
+        # Place bid: BUY YES token
         self.order_mgr.place_limit_post_only(
             token_id=token,
             side=BUY,
@@ -304,20 +307,24 @@ class MarketLoop:
             tick_size=self.market.get("tick_size", 0.01),
             min_size=self.market.get("min_order_size", 1.0),
         )
+        # Place ask: BUY NO token at (1 - ask_price)
+        # Equivalent to SELL YES but doesn't require holding YES tokens
         self.order_mgr.place_limit_post_only(
-            token_id=token,
-            side=SELL,
-            price=quote.ask,
+            token_id=self.token_no,
+            side=BUY,
+            price=round(1.0 - quote.ask, 4),
             size_usd=self.size_usd,
             tick_size=self.market.get("tick_size", 0.01),
             min_size=self.market.get("min_order_size", 1.0),
         )
 
-        # Check for fills, update inventory, and feed VPIN
+        # Check for fills on both tokens, update inventory, and feed VPIN
         fills = self.order_mgr.check_fills(token, self.inventory)
-        for f in fills:
+        fills_no = self.order_mgr.check_fills(self.token_no, self.inventory)
+        all_fills = fills + fills_no
+        for f in all_fills:
             self.engine.vpin.add_trade(f["price"], f["size"], f["side"] == "BUY")
-        if fills:
+        if all_fills:
             vpin_status = self.engine.vpin.status()
             logger.info(
                 f"[{question_short}] VPIN={vpin_status['vpin']:.3f} "
@@ -413,10 +420,11 @@ class PolyMakerBot:
     def _shutdown(self):
         logger.info("Shutdown signal received — cancelling all orders...")
         self._running = False
-        # Cancel all resting orders
+        # Cancel all resting orders (both YES and NO tokens)
         for ml in self._loops:
             try:
                 ml.order_mgr.cancel_market_orders(ml.token_yes)
+                ml.order_mgr.cancel_market_orders(ml.token_no)
             except Exception as e:
                 logger.warning(f"Shutdown cancel error: {e}")
         logger.info("Shutdown complete")
