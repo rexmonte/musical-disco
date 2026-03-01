@@ -18,19 +18,26 @@ VPIN Kill Switch:
 """
 
 import math
+import os
 import time
 from collections import deque
 from dataclasses import dataclass, field
 from typing import Optional
 
+from dotenv import load_dotenv
+from pathlib import Path
+
+load_dotenv(Path(__file__).parent / ".env")
 
 # ── Parameters ────────────────────────────────────────────────────────────────
 
 GAMMA = 0.1        # Risk aversion (higher = wider spread, faster inventory unwind)
 KAPPA = 1.5        # Order arrival rate (tune based on market activity)
-MIN_SPREAD = 0.04  # Minimum spread (4 cents on a $1 binary)
-MAX_SPREAD = 0.20  # Maximum spread (safety cap)
-MAX_INVENTORY = 50.0  # Max net position in USD
+MIN_SPREAD = float(os.getenv("MIN_SPREAD", "0.04"))
+MAX_SPREAD = float(os.getenv("MAX_SPREAD", "0.15"))
+MAX_INVENTORY = float(os.getenv("MAX_POSITION_USD", "50.0"))
+VPIN_WINDOW = int(os.getenv("VPIN_WINDOW", "50"))
+VPIN_THRESHOLD = float(os.getenv("VPIN_THRESHOLD", "0.7"))
 
 
 # ── Data Structures ───────────────────────────────────────────────────────────
@@ -156,7 +163,7 @@ class ASQuoteEngine:
         self.max_spread = max_spread
         self.max_inventory = max_inventory
         self.vol_estimator = VolatilityEstimator()
-        self.vpin = VPINCalculator()
+        self.vpin = VPINCalculator(window=VPIN_WINDOW, threshold=VPIN_THRESHOLD)
 
     def quote(
         self,
@@ -185,15 +192,19 @@ class ASQuoteEngine:
         if self.vpin.is_toxic():
             return None
 
-        # Inventory guard: refuse to worsen already-extreme positions
-        if abs(inventory_usd) >= self.max_inventory:
+        # Hard safety valve at 120% max inventory
+        if abs(inventory_usd) >= self.max_inventory * 1.2:
             return None
 
         # Feed vol estimator for future use
         self.vol_estimator.add_price(mid)
 
-        # Normalized inventory: [-1, 1]
+        # Normalized inventory: [-1, 1] (can exceed 1.0 up to 1.2 safety valve)
         q = inventory_usd / self.max_inventory
+
+        # Gradual inventory brake: gamma scales up as inventory grows
+        # At q=0.5 → gamma * 3.0, at q=1.0 → gamma * 5.0
+        effective_gamma = self.gamma * (1.0 + 4.0 * abs(q))
 
         # Fixed spread: MIN_SPREAD at mid=0.50, widens toward MAX_SPREAD at extremes
         edge_distance = abs(mid - 0.50) / 0.50  # 0.0 at center, 1.0 at edges
@@ -201,7 +212,7 @@ class ASQuoteEngine:
         spread = max(self.min_spread, min(self.max_spread, spread))
 
         # Inventory skew: shift reservation away from position direction
-        skew = q * self.gamma * spread
+        skew = q * effective_gamma * spread
         reservation = mid - skew
 
         half = spread / 2.0

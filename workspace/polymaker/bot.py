@@ -36,7 +36,7 @@ from auth import get_client
 from markets import find_maker_markets
 from strategy import ASQuoteEngine
 
-from py_clob_client.clob_types import OrderArgs, OrderType
+from py_clob_client.clob_types import OrderArgs, OrderType, TradeParams
 from py_clob_client.order_builder.constants import BUY, SELL
 
 # ── Logging ───────────────────────────────────────────────────────────────────
@@ -141,7 +141,7 @@ class OrderManager:
         if self.dry_run:
             return []
         try:
-            trades = self.client.get_trades(params={"asset_id": token_id})
+            trades = self.client.get_trades(params=TradeParams(asset_id=token_id))
             if not trades:
                 return []
             new_fills = []
@@ -313,8 +313,16 @@ class MarketLoop:
             min_size=self.market.get("min_order_size", 1.0),
         )
 
-        # Check for fills and update inventory
-        self.order_mgr.check_fills(token, self.inventory)
+        # Check for fills, update inventory, and feed VPIN
+        fills = self.order_mgr.check_fills(token, self.inventory)
+        for f in fills:
+            self.engine.vpin.add_trade(f["price"], f["size"], f["side"] == "BUY")
+        if fills:
+            vpin_status = self.engine.vpin.status()
+            logger.info(
+                f"[{question_short}] VPIN={vpin_status['vpin']:.3f} "
+                f"trades={vpin_status['trades_in_window']} toxic={vpin_status['toxic']}"
+            )
 
         # Periodic P&L summary (every 10 cycles ~5 min)
         if self.cycles % 10 == 0:

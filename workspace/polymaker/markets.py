@@ -34,7 +34,7 @@ FEE_SLUGS = [
 
 # Minimum thresholds for market selection
 MIN_LIQUIDITY = 1_000.0   # USD
-MIN_VOLUME_24H = 500.0    # USD (some activity = orders will fill)
+MIN_VOLUME_24H = 5_000.0  # USD (need enough activity for reliable inventory unwind)
 MIN_DAYS_TO_CLOSE = 1.0   # Avoid markets resolving today
 
 
@@ -194,7 +194,7 @@ def find_maker_markets(limit: int = 20) -> list[dict]:
     def _score(m):
         mid_score = 1.0 - 2.0 * abs(m["mid"] - 0.50)  # 1.0 at 0.50, 0.0 at extremes
         vol_score = m["volume_24h"] / max_vol if max_vol > 0 else 0
-        return 0.6 * mid_score + 0.4 * vol_score
+        return 0.35 * mid_score + 0.65 * vol_score
     results.sort(key=_score, reverse=True)
     logger.info(f"Found {len(results)} maker-suitable markets")
     return results[:limit]
