@@ -8,7 +8,7 @@
       "name": "bookmarks:collect",
       "enabled": true,
       "createdAtMs": 1772316305797,
-      "updatedAtMs": 1772316305797,
+      "updatedAtMs": 1772320253501,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *",
@@ -27,7 +27,13 @@
       },
       "state": {
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1772370000000
+        "nextRunAtMs": 1772370000000,
+        "lastRunAtMs": 1772320238948,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 14553,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -37,7 +43,7 @@
       "name": "bookmarks:analyze",
       "enabled": true,
       "createdAtMs": 1772316305797,
-      "updatedAtMs": 1772316305797,
+      "updatedAtMs": 1772322875830,
       "schedule": {
         "kind": "cron",
         "expr": "15 5 * * *",
@@ -47,16 +53,22 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "You are a bookmark analyst. Process unanalyzed bookmarks, categorize them, score their alpha value, and update the interest profile.\n\nStep 1: Read /Users/clawdrex/.openclaw/workspace/bookmarks/data.json. Find all bookmarks where _meta.processedAt is null. If none found, report \"No unprocessed bookmarks\" and stop.\n\nStep 2: For each unprocessed bookmark, analyze the text and set:\n- _meta.category: one of quant_trading, ai_agents, local_models, health_peptides, tools_productivity, economics_politics, entertainment, or a NEW category if none fit\n- _meta.tags: array of relevant keywords (e.g. [\"polymarket\", \"kelly-criterion\", \"arbitrage\"])\n- _meta.alphaScore: 0-10 rating of actionable value for a Polymarket quant trader / AI builder / health optimizer\n  - 8-10: Directly actionable strategy, tool, or research with specific details\n  - 5-7: Useful reference or inspiration but not immediately actionable\n  - 0-4: Entertainment, noise, or already-known information\n- _meta.alphaType: strategy | tool | research | trade_setup | health | noise\n- _meta.processedAt: current ISO timestamp\n\nStep 3: For bookmarks scoring >= 6, append entries to /Users/clawdrex/.openclaw/workspace/bookmarks/alpha.md in this format:\n\n### <ALPHATYPE uppercase>: <title from tweet>\n- **Source:** @<username> (<date>) | <likes> likes\n- **URL:** <url>\n- **Alpha:** 1-2 sentences of the actual actionable insight\n- **Action:** Concrete next step Rex should take\n- **Score:** N/10\n- **Status:** OPEN\n\nAdd a date header (## YYYY-MM-DD) if one doesn't exist for today.\n\nStep 4: Recompute /Users/clawdrex/.openclaw/workspace/bookmarks/profile.json from ALL bookmarks in data.json (not just new ones). Include:\n- categories: each with count, pct, trend (rising/stable/falling/new based on last 7 days vs older), keyAuthors, keyTerms\n- topAuthors: top 10 by bookmark count with their categories\n- signals: primaryInterest, emergingInterest (fastest growing category), bookmarkVelocity (avg bookmarks/day)\n\nStep 5: Save all three files (data.json, alpha.md, profile.json). Report summary: N processed, N high-alpha, top categories.",
-        "model": "ollama/qwen3.5:35b",
-        "timeoutSeconds": 600
+        "message": "You are a bookmark analyst. Process unanalyzed bookmarks and update the interest profile.\n\nIMPORTANT: Do NOT read data.json directly — it's too large. Use python3 scripts to extract and update data.\n\nStep 1: Check for unprocessed bookmarks by running:\npython3 -c \"\nimport json\nd = json.load(open('/Users/clawdrex/.openclaw/workspace/bookmarks/data.json'))\nunprocessed = [b for b in d['bookmarks'] if b['_meta']['processedAt'] is None]\nprint(f'Total: {len(d[\"bookmarks\"])}, Unprocessed: {len(unprocessed)}')\nfor b in unprocessed:\n    print(f'  {b[\"id\"]} | @{b[\"author\"][\"username\"]} | {b[\"text\"][:150]}')\n\"\n\nIf 0 unprocessed, report that and stop.\n\nStep 2: For each unprocessed bookmark shown, decide its category and alpha score based on the text shown. Categories: quant_trading, ai_agents, local_models, health_peptides, tools_productivity, economics_politics, entertainment, or new. Alpha score 0-10 (8+: directly actionable, 5-7: useful reference, 0-4: noise). Alpha type: strategy|tool|research|trade_setup|health|noise.\n\nStep 3: Write a python3 script that updates data.json in place — for each unprocessed bookmark by id, set _meta.processedAt, category, tags, alphaScore, alphaType. Run it.\n\nStep 4: For bookmarks scoring >= 6, append to /Users/clawdrex/.openclaw/workspace/bookmarks/alpha.md with today's date header (## YYYY-MM-DD) and entries:\n### TYPE: Title\n- **Source:** @author (date) | N likes\n- **URL:** url\n- **Alpha:** 1-2 sentence insight\n- **Action:** Next step\n- **Score:** N/10\n- **Status:** OPEN\n\nStep 5: Recompute profile.json via python3 script — read all bookmarks from data.json, compute category counts/pcts/trends, top authors, signals (primaryInterest, emergingInterest, bookmarkVelocity). Write to /Users/clawdrex/.openclaw/workspace/bookmarks/profile.json.\n\nStep 6: Report summary.",
+        "model": "anthropic/claude-haiku-4-5-20251001",
+        "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1772370900000
+        "nextRunAtMs": 1772370900000,
+        "lastRunAtMs": 1772322859918,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 15912,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
