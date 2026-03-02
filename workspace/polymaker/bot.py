@@ -35,6 +35,7 @@ if _secrets.exists():
 from auth import get_client
 from markets import find_maker_markets
 from strategy import ASQuoteEngine
+from ws_feed import MarketFeed, FillUpdate
 
 from py_clob_client.clob_types import OrderArgs, OrderType, TradeParams
 from py_clob_client.order_builder.constants import BUY, SELL
@@ -58,6 +59,8 @@ MAX_POSITION_USD = float(os.getenv("MAX_POSITION_USD", "50.0"))
 ORDER_SIZE_USD = float(os.getenv("ORDER_SIZE_USD", "5.0"))
 QUOTE_REFRESH_SEC = int(os.getenv("QUOTE_REFRESH_SEC", "30"))
 NUM_MARKETS = int(os.getenv("NUM_MARKETS", "5"))
+MIN_REQUOTE_SEC = float(os.getenv("MIN_REQUOTE_SEC", "2.0"))
+MID_THRESHOLD = float(os.getenv("MID_THRESHOLD", "0.005"))
 
 
 # ── Inventory Tracker ─────────────────────────────────────────────────────────
@@ -230,7 +233,7 @@ class OrderManager:
 class MarketLoop:
     """
     Manages quoting for a single market.
-    Refreshes quotes every QUOTE_REFRESH_SEC seconds.
+    Event-driven: requotes on WS midpoint changes, falls back to REST polling.
     """
 
     def __init__(
@@ -240,38 +243,88 @@ class MarketLoop:
         inventory: InventoryTracker,
         order_mgr: OrderManager,
         size_usd: float,
+        feed: Optional['MarketFeed'] = None,
     ):
         self.market = market
         self.engine = engine
         self.inventory = inventory
         self.order_mgr = order_mgr
         self.size_usd = size_usd
+        self.feed = feed
         self.token_yes = market["token_yes"]
         self.token_no = market["token_no"]
         self.cycles = 0
+        self._last_requote: float = 0.0
+        self._running = False
 
-    async def run_cycle(self) -> None:
-        """Single quote refresh cycle."""
+    async def run(self) -> None:
+        """Event-driven loop: wait for WS mid update or REST fallback on timeout."""
+        self._running = True
+        question_short = self.market["question"][:50]
+
+        while self._running:
+            try:
+                # Wait for WS mid update, or fall back to REST after timeout
+                ws_update = False
+                if self.feed:
+                    ws_update = await self.feed.wait_for_update(
+                        self.token_yes, timeout=QUOTE_REFRESH_SEC
+                    )
+
+                    # Process WS fills before requoting
+                    await self._process_ws_fills()
+                else:
+                    await asyncio.sleep(QUOTE_REFRESH_SEC)
+
+                # Rate-limit requotes
+                now = time.time()
+                elapsed = now - self._last_requote
+                if elapsed < MIN_REQUOTE_SEC:
+                    await asyncio.sleep(MIN_REQUOTE_SEC - elapsed)
+
+                # Get midpoint: prefer WS cached, fall back to REST
+                mid = None
+                if self.feed:
+                    mid = self.feed.get_mid(self.token_yes)
+                    if mid is not None:
+                        source = "WS" if ws_update else "WS-cached"
+
+                if mid is None:
+                    # REST fallback
+                    try:
+                        mid_data = self.order_mgr.client.get_midpoint(self.token_yes)
+                        mid = float(mid_data.get("mid", self.market.get("mid", 0.5)))
+                        source = "REST"
+                    except Exception as e:
+                        logger.warning(f"[{question_short}] midpoint fetch failed: {e}")
+                        continue
+
+                await self._requote(mid, source)
+
+                # REST fill reconciliation every 5th cycle
+                if self.cycles % 5 == 0:
+                    self._reconcile_fills_rest()
+
+            except asyncio.CancelledError:
+                return
+            except Exception as e:
+                logger.error(f"Loop error for {question_short}: {e}")
+                await asyncio.sleep(QUOTE_REFRESH_SEC)
+
+    def stop(self):
+        self._running = False
+
+    async def _requote(self, mid: float, source: str = "REST") -> None:
+        """Generate and place quotes for given midpoint."""
         self.cycles += 1
+        self._last_requote = time.time()
         token = self.token_yes
         question_short = self.market["question"][:50]
 
-        # Get current mid price
-        try:
-            mid_data = self.order_mgr.client.get_midpoint(token)
-            mid = float(mid_data.get("mid", self.market.get("mid", 0.5)))
-        except Exception as e:
-            logger.warning(f"[{question_short}] midpoint fetch failed: {e}")
-            return
-
-        # Get inventory
         inv = self.inventory.get(token)
-
-        # Time remaining fraction (rough estimate based on days)
         days = self.market.get("days_to_close", 30.0)
         T = min(1.0, max(0.01, days / 30.0))
 
-        # Generate quote
         quote = self.engine.quote(mid=mid, inventory_usd=inv, time_remaining_fraction=T)
 
         if quote is None:
@@ -282,23 +335,20 @@ class MarketLoop:
                 )
             else:
                 logger.info(f"[{question_short}] No quote (inventory limit or VPIN)")
-            # Cancel existing orders on both tokens
             self.order_mgr.cancel_market_orders(token)
             self.order_mgr.cancel_market_orders(self.token_no)
             return
 
         logger.info(
             f"[{question_short}] "
-            f"mid={mid:.3f} res={quote.reservation:.3f} "
+            f"mid={mid:.3f}({source}) res={quote.reservation:.3f} "
             f"bid={quote.bid:.3f} ask={quote.ask:.3f} "
             f"spread={quote.spread:.3f} inv=${inv:.1f}"
         )
 
-        # Cancel stale orders before requoting (both YES and NO tokens)
         self.order_mgr.cancel_market_orders(token)
         self.order_mgr.cancel_market_orders(self.token_no)
 
-        # Place bid: BUY YES token
         self.order_mgr.place_limit_post_only(
             token_id=token,
             side=BUY,
@@ -307,8 +357,6 @@ class MarketLoop:
             tick_size=self.market.get("tick_size", 0.01),
             min_size=self.market.get("min_order_size", 1.0),
         )
-        # Place ask: BUY NO token at (1 - ask_price)
-        # Equivalent to SELL YES but doesn't require holding YES tokens
         self.order_mgr.place_limit_post_only(
             token_id=self.token_no,
             side=BUY,
@@ -318,28 +366,56 @@ class MarketLoop:
             min_size=self.market.get("min_order_size", 1.0),
         )
 
-        # Check for fills on both tokens, update inventory, and feed VPIN
-        fills = self.order_mgr.check_fills(token, self.inventory)
-        fills_no = self.order_mgr.check_fills(self.token_no, self.inventory)
-        all_fills = fills + fills_no
+        # Periodic P&L summary (every 10 cycles)
+        if self.cycles % 10 == 0:
+            pnl = self.inventory.summary()
+            total_fills = self.inventory.total_fills
+            if pnl or total_fills:
+                logger.info(
+                    f"[{question_short}] === P&L Summary (cycle {self.cycles}) === "
+                    f"fills={total_fills} positions={pnl}"
+                )
+
+    async def _process_ws_fills(self) -> None:
+        """Drain WS fill queues for both tokens and update inventory/VPIN."""
+        if not self.feed:
+            return
+
+        all_fills: list[FillUpdate] = []
+        for tid in (self.token_yes, self.token_no):
+            all_fills.extend(await self.feed.get_fills(tid))
+
         for f in all_fills:
-            self.engine.vpin.add_trade(f["price"], f["size"], f["side"] == "BUY")
+            usd = f.price * f.size
+            delta = -usd if f.side == "BUY" else usd
+            self.inventory.update(f.token_id, delta)
+            self.inventory.record_fill(f.side, usd)
+            self.engine.vpin.add_trade(f.price, f.size, f.side == "BUY")
+            # Mark as seen for REST dedup
+            self.order_mgr._seen_fills.add(f.trade_id)
+
         if all_fills:
+            question_short = self.market["question"][:50]
             vpin_status = self.engine.vpin.status()
             logger.info(
                 f"[{question_short}] VPIN={vpin_status['vpin']:.3f} "
                 f"trades={vpin_status['trades_in_window']} toxic={vpin_status['toxic']}"
             )
 
-        # Periodic P&L summary (every 10 cycles ~5 min)
-        if self.cycles % 10 == 0:
-            pnl = self.inventory.summary()
-            fills = self.inventory.total_fills
-            if pnl or fills:
-                logger.info(
-                    f"[{question_short}] === P&L Summary (cycle {self.cycles}) === "
-                    f"fills={fills} positions={pnl}"
-                )
+    def _reconcile_fills_rest(self) -> None:
+        """REST fill check for reconciliation (catches any WS misses)."""
+        fills = self.order_mgr.check_fills(self.token_yes, self.inventory)
+        fills_no = self.order_mgr.check_fills(self.token_no, self.inventory)
+        all_fills = fills + fills_no
+        for f in all_fills:
+            self.engine.vpin.add_trade(f["price"], f["size"], f["side"] == "BUY")
+        if all_fills:
+            question_short = self.market["question"][:50]
+            vpin_status = self.engine.vpin.status()
+            logger.info(
+                f"[{question_short}] REST reconciliation: {len(all_fills)} new fills, "
+                f"VPIN={vpin_status['vpin']:.3f}"
+            )
 
 
 # ── Main Bot ──────────────────────────────────────────────────────────────────
@@ -347,7 +423,7 @@ class MarketLoop:
 class PolyMakerBot:
     """
     Production market maker bot.
-    Discovers markets, runs parallel quote loops, handles shutdown.
+    Discovers markets, starts WebSocket feed, runs event-driven quote loops.
     """
 
     def __init__(self, dry_run: bool = False, num_markets: int = NUM_MARKETS):
@@ -355,11 +431,13 @@ class PolyMakerBot:
         self.num_markets = num_markets
         self._running = False
         self._loops: list[MarketLoop] = []
+        self._feed: Optional[MarketFeed] = None
 
     def _setup(self):
         logger.info("=" * 60)
         logger.info("PolyMaker Bot starting up")
         logger.info(f"  dry_run={self.dry_run}  markets={self.num_markets}  size=${ORDER_SIZE_USD}/side")
+        logger.info(f"  min_requote={MIN_REQUOTE_SEC}s  mid_threshold={MID_THRESHOLD}")
         logger.info("=" * 60)
 
         # Auth
@@ -376,11 +454,34 @@ class PolyMakerBot:
         for m in selected:
             logger.info(f"  [{m['days_to_close']:.0f}d] ${m['volume_24h']:,.0f}/24h  {m['question'][:60]}")
 
+        # Collect token/condition IDs for WebSocket subscriptions
+        token_ids = []
+        condition_ids = []
+        for m in selected:
+            token_ids.append(m["token_yes"])
+            if m.get("token_no"):
+                token_ids.append(m["token_no"])
+            if m.get("condition_id"):
+                condition_ids.append(m["condition_id"])
+
+        # Create WebSocket feed
+        api_creds = {
+            "api_key": client.creds.api_key,
+            "api_secret": client.creds.api_secret,
+            "api_passphrase": client.creds.api_passphrase,
+        }
+        self._feed = MarketFeed(
+            api_creds=api_creds,
+            token_ids=token_ids,
+            condition_ids=condition_ids,
+            mid_threshold=MID_THRESHOLD,
+        )
+
         # Shared objects
         inventory = InventoryTracker()
         order_mgr = OrderManager(client, dry_run=self.dry_run)
 
-        # Build per-market loops (each gets its own engine for independent state)
+        # Build per-market loops with feed reference
         self._loops = [
             MarketLoop(
                 market=m,
@@ -388,45 +489,51 @@ class PolyMakerBot:
                 inventory=inventory,
                 order_mgr=order_mgr,
                 size_usd=ORDER_SIZE_USD,
+                feed=self._feed,
             )
             for m in selected
         ]
-
-    async def _run_loop(self, loop: MarketLoop):
-        """Continuously run a single market's quote cycle."""
-        while self._running:
-            try:
-                await loop.run_cycle()
-            except Exception as e:
-                logger.error(f"Loop error for {loop.market['question'][:40]}: {e}")
-            await asyncio.sleep(QUOTE_REFRESH_SEC)
 
     async def run(self):
         self._setup()
         self._running = True
 
-        # Handle SIGTERM/SIGINT for clean shutdown
         loop = asyncio.get_event_loop()
         for sig in (signal.SIGINT, signal.SIGTERM):
-            loop.add_signal_handler(sig, self._shutdown)
+            loop.add_signal_handler(sig, lambda: asyncio.create_task(self._shutdown()))
 
-        logger.info(f"Bot running — refresh every {QUOTE_REFRESH_SEC}s")
+        logger.info(f"Bot running — WS-driven requoting (fallback every {QUOTE_REFRESH_SEC}s)")
         if self.dry_run:
             logger.info("*** DRY RUN MODE — no real orders ***")
 
-        tasks = [asyncio.create_task(self._run_loop(ml)) for ml in self._loops]
-        await asyncio.gather(*tasks, return_exceptions=True)
+        # Start WS feed + all market loops
+        tasks = [asyncio.create_task(self._feed.run(), name="ws_feed")]
+        tasks += [asyncio.create_task(ml.run(), name=f"loop_{i}") for i, ml in enumerate(self._loops)]
 
-    def _shutdown(self):
+        try:
+            await asyncio.gather(*tasks, return_exceptions=True)
+        finally:
+            await self._shutdown()
+
+    async def _shutdown(self):
+        if not self._running:
+            return
         logger.info("Shutdown signal received — cancelling all orders...")
         self._running = False
-        # Cancel all resting orders (both YES and NO tokens)
+
+        # Stop market loops
         for ml in self._loops:
+            ml.stop()
             try:
                 ml.order_mgr.cancel_market_orders(ml.token_yes)
                 ml.order_mgr.cancel_market_orders(ml.token_no)
             except Exception as e:
                 logger.warning(f"Shutdown cancel error: {e}")
+
+        # Stop WS feed
+        if self._feed:
+            await self._feed.stop()
+
         logger.info("Shutdown complete")
 
 
