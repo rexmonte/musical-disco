@@ -40,3 +40,8 @@ clouderoute.rtf
 Untitled.rtf
 workspace/node_modules/
 workspace/x-bookmarks/node_modules/
+
+# ─── Claude Code ───────────────────────────────────────────────────
+CLAUDE.md
+**/CLAUDE.md
+.claude/
