@@ -1,6 +1,7 @@
 # ─── Credentials & Auth ────────────────────────────────────────────
 agents/*/agent/auth-profiles.json
 agents/*/agent/auth.json
+agents/*/agent/models.json
 identity/device.json
 identity/device-auth.json
 devices/paired.json
